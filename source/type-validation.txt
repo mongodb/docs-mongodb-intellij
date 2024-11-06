@@ -12,4 +12,4 @@ Type Validation
    :depth: 1
    :class: singlecol
 
-Content on this page will be addressed in DOCSP-44965.
+Test update
