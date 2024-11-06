@@ -1,10 +1,46 @@
 ===========================
-MongoDB for IntelliJ Plugin
+{+intellij-full+}
 ===========================
 
 .. default-domain:: mongodb
 
-Content here will be added in DOCSP-45086.
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+{+intellij-full+} builds on the existing IntelliJ Database Explorer. Database 
+Explorer allows you to connect to your MongoDB instance 
+
+Features 
+--------
+
+You can use the {+intellij-short+} to:
+
+- Explore your MongoDB data.
+
+- Quickly prototype MongoDB queries.
+
+- Identify anti-patterns in your application code.
+
+Get Started 
+-----------
+
+:ref:`intellij-install`
+  Install the {+intellij-short+} from the JetBrains Marketplace.
+
+:ref:`intellij-connect`
+  Connect to your MongoDB deployment.
+
+:ref:`intellij-autocomplete`
+   Use the autocomplete feature to write MongoDB queries.
+
+:ref:`intellij-type-validation`
+   Validate the types of your MongoDB queries.
+
+:ref:`intellij-index-warning`
+   Get a warning when you run a query without an index.
 
 .. toctree::
    :titlesonly:
