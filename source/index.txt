@@ -20,7 +20,7 @@ You can use the {+intellij-short+} to:
 
 - Explore your MongoDB data.
 
-- Quickly prototype MongoDB queries.
+- Prototype and test MongoDB queries.
 
 - Identify anti-patterns in your application code.
 
@@ -41,6 +41,14 @@ Get Started
 
 :ref:`intellij-index-warning`
    Get a warning when you run a query without an index.
+
+Submit Feedback 
+---------------
+
+To report a bugs, request a feature, or submit general feedback, open a 
+ticket in the [MongoDB for IntelliJ Plugin JIRA project](https://jira.mongodb.org/projects/INTELLIJ/issues/INTELLIJ-143?filter=allopenissues).
+
+To learn more about submitting feedback, see :ref:`intellij-submit-feedback`.
 
 .. toctree::
    :titlesonly:
