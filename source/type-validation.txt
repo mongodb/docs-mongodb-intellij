@@ -12,16 +12,18 @@ Type Validation
    :depth: 1
    :class: singlecol
 
-When your document field type mismatches in cases such as checking
-equality, inserting or updating values, and more, the plugin will display
-an in-line warning letting you know about the type mismatch. 
+The plugin examines your document fields to ensure the data type is
+correct. For example, when you enter a document field for code that
+performs an equality comparison, inserting or updating a document value,
+and so on, the field is examined to ensure it is correct.
 
-Note: support for Aggregation in the roadmap, feel free to comment on
-this ticket to express your interest to have Aggregations supported.
+If your document field doesn't match the required type, the plugin shows
+a warning that indicates the type doesn't match.
 
-In the following example the field type for ``trip_status`` is a string but
-the query predicate is doing an equality check on an integer, therefore
-the plugin is warning you of the mismatched type.
+In the following example the field type for ``trip_status`` is a string
+but the query predicate performs equality comparison on an integer.
+Because the types don't match, therefore the plugin shows a warning
+about the type mismatch.
 
 To resolve this issue, ensure you change the value to match the expected
 field type. Alternatively, if the field is dynamically typed (i.e. no
