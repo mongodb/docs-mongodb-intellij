@@ -20,12 +20,11 @@ and so on, the field is examined to ensure it is correct.
 If your document field doesn't match the required type, the plugin shows
 a warning that indicates the type doesn't match.
 
-In the following example the field type for ``trip_status`` is a string
-but the query predicate performs equality comparison on an integer.
-Because the types don't match, therefore the plugin shows a warning
-about the type mismatch.
+In the following example code snippet, the field type for
+``trip_status`` is a string but the query predicate performs equality
+comparison on an integer value. Because the types don't match, the
+plugin shows a warning about the mismatched types.
 
-To resolve this issue, ensure you change the value to match the expected
-field type. Alternatively, if the field is dynamically typed (i.e. no
-strict typing rules need to be applied), then you can safely ignore the
-warning.
+To resolve the warning, you can change the value to match the required
+field type. Alternatively, if the field is dynamically typed and strict
+typing rules aren't applied, you can ignore the warning.
