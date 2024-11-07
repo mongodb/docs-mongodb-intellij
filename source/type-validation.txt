@@ -27,8 +27,15 @@ plugin shows a warning about the mismatched types.
 
 .. code-block:: java
 
-   db.trips.find({ trip_status: 1 });
+   public List<document> findCompleteTripsByDriver(String driverID) {
+      return trips.find( Filters.and(
+         Filters.eq( fieldName: "dispute.status", value: "pending" ),
+         ...
+      )
+      ...
+   }
    
+
 To resolve the warning, you can change the value to match the required
 field type. Alternatively, if the field is dynamically typed and strict
 typing rules aren't applied, you can ignore the warning.
