@@ -12,4 +12,18 @@ Type Validation
    :depth: 1
    :class: singlecol
 
-Test update
+When your document field type mismatches in cases such as checking
+equality, inserting or updating values, and more, the plugin will display
+an in-line warning letting you know about the type mismatch. 
+
+Note: support for Aggregation in the roadmap, feel free to comment on
+this ticket to express your interest to have Aggregations supported.
+
+In the following example the field type for ``trip_status`` is a string but
+the query predicate is doing an equality check on an integer, therefore
+the plugin is warning you of the mismatched type.
+
+To resolve this issue, ensure you change the value to match the expected
+field type. Alternatively, if the field is dynamically typed (i.e. no
+strict typing rules need to be applied), then you can safely ignore the
+warning.
