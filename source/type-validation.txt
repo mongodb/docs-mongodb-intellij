@@ -23,22 +23,22 @@ field is examined to ensure the type is valid.
 If the type is invalid, the plugin shows a warning that indicates
 the type cannot be assigned.
 
-You can change your code to use the required type. If the field is
-dynamically typed and strict typing rules aren't applied, you can ignore
-the invalid type warning.
+To resolve the warning, change the field value to match the expected
+type. If the field is dynamically typed and strict typing rules aren't
+applied, you can ignore the invalid type warning.
 
-Examples
---------
+Example
+-------
 
 In the following example Java code snippet, the ``trip_status`` field
-type is ``String`` but the ``Filters`` operation performs equality
-comparison with the ``Integer`` value ``1324324``:
+type is ``String``, but the ``Filters`` operation attempts to performs
+equality comparison with the ``Integer`` value ``1324324``:
 
 .. code-block:: java
    :copyable: false
    :emphasize-lines: 3
 
-   public List<Document> findCompleted TripsByDriver( String driverId ) {
+   public List<Document> findCompletedTripsByDriver( String driverId ) {
       return trips.find( Filters.and(
          Filters.eq( fieldName: "trip_status", value: 1324324 )
          Filters.eq( fieldName: "driver_id", driverId )
@@ -48,11 +48,8 @@ comparison with the ``Integer`` value ``1324324``:
 Because ``value`` is an ``Integer`` but a ``String`` is required, the
 plugin shows a warning about the invalid type:
 
-.. code-block:: java
-   :copyable: false
-   
-   "Integer" (type of provided value) can not be assigned to
-   "String" (type of "trip_status")
+``"Integer" (type of provided value) can not be assigned to "String"
+(type of "trip_status")``
 
 To resolve the invalid type, you can change the value to a ``String``.
 
