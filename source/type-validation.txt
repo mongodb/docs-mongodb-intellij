@@ -15,17 +15,17 @@ Type Validation
 Definition
 ----------
 
-The MongoDB IntelliJ plugin examines the document fields to ensure the
-data types are valid. For example, if you use a document field that
-performs an equality comparison, or an insert or update of document
-values, the field is examined to ensure the type is valid.
+The {+intellij-full+} examines the document fields in queries to ensure
+the data types are valid. For example, if you use a document field in an
+equality comparison, or an insert or update of document values, the
+field is examined to ensure the type is valid.
 
-If the type is invalid, the plugin shows a notification that indicates
+If the type is invalid, the plugin shows a warning that indicates
 the type cannot be assigned.
 
-You can change your code to use the required type. Alternatively, if the
-field is dynamically typed and strict typing rules aren't applied, you
-can ignore the invalid type notification.
+You can change your code to use the required type. If the field is
+dynamically typed and strict typing rules aren't applied, you can ignore
+the invalid type warning.
 
 Examples
 --------
@@ -46,7 +46,7 @@ comparison with the ``Integer`` value ``1324324``:
    }
 
 Because ``value`` is an ``Integer`` but a ``String`` is required, the
-plugin shows a notification about the invalid type:
+plugin shows a warning about the invalid type:
 
 .. code-block:: java
    :copyable: false
