@@ -36,6 +36,20 @@ plugin shows a warning about the mismatched types.
    }gggggggg
    
 
+public List<Document> findCompleted TripsByDriver(String driverId) {
+   return trips.find(Filters.and production.trips }
+      Filters.eq(fieldName: "trip_status", value: 1324324)
+      Filters.eq(fieldName: "driver_id", driverId) )).into(new ArrayList<>());
+
+A "Integer"(type of provided value) can not be assigned to "String"(type
+of "trip_status") Choose new connection
+
+ Filters.eq("trip_status", 1324324) are: public
+List<Document> findTripsWithinTimeRange(String start return
+trips.find(Filters.and Filters.gte(fieldName: "start_time", startTime),
+production.trips Filters.lte(fieldName: "end_time", endTime) )).into(new
+ArrayList<>()); } Bson eq(String) Bson eq(String, Integer)
+
 To resolve the warning, you can change the value to match the required
 field type. Alternatively, if the field is dynamically typed and strict
 typing rules aren't applied, you can ignore the warning.
