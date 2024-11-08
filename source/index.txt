@@ -4,25 +4,40 @@
 
 .. default-domain:: mongodb
 
+.. meta:: 
+   :description: MongoDB for IntelliJ Plugin: 
+
 .. contents:: On this page
    :local:
    :backlinks: none
    :depth: 1
    :class: singlecol
 
-{+intellij-full+} builds on the existing IntelliJ Database Explorer. Database 
-Explorer allows you to connect to your MongoDB instance 
+The {+intellij-full+} is a tool designed to improve the development experience 
+for Java developers working with IntelliJ IDEA. The {+intellij-short+} builds on 
+the existing IntelliJ Database Explorer to streamline the process of writing 
+and managing MongoDB queries directly within the IDE.
+
+You can use the {+intellij-short+} to:
+
+- Connect to your MongoDB instance and interact with your data. 
+
+- Build and test Java queries faster.  
+
+- Identify query and data modeling anti-patterns in your application code.
 
 Features 
 --------
 
-You can use the {+intellij-short+} to:
+The {+intellij-short+} currently supports the following features:
 
-- Explore your MongoDB data.
+- :ref:`Autocomplete <intellij-autocomplete>` for database, collection, and 
+  document field names. 
 
-- Prototype and test MongoDB queries.
+- :ref:`Type validation <intellij-type-validation>` of document fields.
 
-- Identify anti-patterns in your application code.
+- :ref:`Missing index warnings <intellij-index-warning>` for Java queries.
+
 
 Get Started 
 -----------
@@ -32,15 +47,6 @@ Get Started
 
 :ref:`intellij-connect`
   Connect to your MongoDB deployment.
-
-:ref:`intellij-autocomplete`
-   Use the autocomplete feature to write MongoDB queries.
-
-:ref:`intellij-type-validation`
-   Validate the types of your MongoDB queries.
-
-:ref:`intellij-index-warning`
-   Get a warning when you run a query without an index.
 
 Submit Feedback 
 ---------------
