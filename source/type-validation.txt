@@ -51,9 +51,11 @@ plugin shows a warning about the invalid type:
 ``"Integer" (type of provided value) can not be assigned to "String"
 (type of "trip_status")``
 
-To resolve the invalid type, you can change the value to a ``String``.
+To resolve the invalid type, change the value to a ``String``.
 
 Learn More
 ----------
 
-:ref:`intellij-connect`
+- :ref:`intellij-connect`
+- :ref:`intellij-autocomplete`
+- :ref:`intellij-index-warning`
