@@ -15,10 +15,10 @@ Type Validation
 Definition
 ----------
 
-The MongoDB IntelliJ plugin examines document fields to ensure the data
-types are valid. For example, if you use a document field that performs
-an operation like an equality comparison, or an insert or update of
-document values, the field is examined to ensure the type is valid.
+The MongoDB IntelliJ plugin examines the document fields to ensure the
+data types are valid. For example, if you use a document field that
+performs an equality comparison, or an insert or update of document
+values, the field is examined to ensure the type is valid.
 
 If the type is invalid, the plugin shows a notification that indicates
 the type cannot be assigned.
@@ -31,8 +31,8 @@ Examples
 --------
 
 In the following example Java code snippet, the ``trip_status`` field
-type is ``String`` but the query ``Filters`` operation performs equality
-comparison on the ``Integer`` value ``1324324``:
+type is ``String`` but the ``Filters`` operation performs equality
+comparison with the ``Integer`` value ``1324324``:
 
 .. code-block:: java
    :copyable: false
@@ -45,7 +45,7 @@ comparison on the ``Integer`` value ``1324324``:
       )).into( new ArrayList<> () );
    }
 
-Because ``value`` is an ``Integer`` and a ``String`` is required, the
+Because ``value`` is an ``Integer`` but a ``String`` is required, the
 plugin shows a notification about the invalid type:
 
 .. code-block:: java
@@ -54,8 +54,7 @@ plugin shows a notification about the invalid type:
    "Integer" (type of provided value) can not be assigned to
    "String" (type of "trip_status")
 
-To resolve the invalid type issue, you can change the value to a
-``String``.
+To resolve the invalid type, you can change the value to a ``String``.
 
 Learn More
 ----------
