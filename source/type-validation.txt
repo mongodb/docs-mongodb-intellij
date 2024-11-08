@@ -17,12 +17,15 @@ Definition
 
 The MongoDB IntelliJ plugin examines document fields to ensure the data
 types are valid. For example, if you use a document field that performs
-an operation like an equality comparison, an insert or update of
-document values, and other operations, the field is examined to
-ensure the type is valid.
+an operation like an equality comparison, or an insert or update of
+document values, the field is examined to ensure the type is valid.
 
 If the type is invalid, the plugin shows a notification that indicates
 the type cannot be assigned.
+
+You can change your code to use the required type. Alternatively, if the
+field is dynamically typed and strict typing rules aren't applied, you
+can ignore the invalid type notification.
 
 Examples
 --------
@@ -51,10 +54,8 @@ plugin shows a notification about the invalid type:
    "Integer" (type of provided value) can not be assigned to
    "String" (type of "trip_status")
 
-To resolve the type issue, you can change the value to match the
-required ``String`` field type. Alternatively, if the field is
-dynamically typed and strict typing rules aren't applied, you can ignore
-the type issue.
+To resolve the invalid type issue, you can change the value to a
+``String``.
 
 Learn More
 ----------
