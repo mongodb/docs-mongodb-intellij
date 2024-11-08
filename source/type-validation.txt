@@ -31,6 +31,8 @@ type is ``String`` but the query ``Filter`` predicate performs equality
 comparison on an ``integer`` value:
 
 .. code-block:: java
+   :copyable: false
+   :emphasize-lines: 3
 
    public List<Document> findCompleted TripsByDriver( String driverId ) {
       return trips.find( Filters.and(
@@ -43,7 +45,8 @@ Because the types don't match, the plugin shows a warning about the
 mismatched types. For example:
 
 .. code-block:: java
-
+   :copyable: false
+   
    "Integer"(type of provided value) can not be assigned to
    "String"(type of "trip_status")
 
