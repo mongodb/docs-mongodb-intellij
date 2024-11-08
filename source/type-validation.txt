@@ -16,20 +16,20 @@ Definition
 ----------
 
 The MongoDB IntelliJ plugin examines document fields to ensure the data
-types are valid. For example, when you use a document field that
-performs an operation like an equality comparison, an insert or update
-of document values, and so on, the field type is examined to ensure it
-is valid.
+types are valid. For example, if you use a document field that performs
+an operation like an equality comparison, an insert or update of
+document values, and other operations, the field is examined to
+ensure the type is valid.
 
-If the document field doesn't match the required type, the plugin shows
-a warning that indicates the type doesn't match.
+If the type is invalid, the plugin shows a notification that indicates
+the type cannot be assigned.
 
 Examples
 --------
 
 In the following example Java code snippet, the ``trip_status`` field
 type is ``String`` but the query ``Filters`` operation performs equality
-comparison on the ``integer`` value ``1324324``:
+comparison on the ``Integer`` value ``1324324``:
 
 .. code-block:: java
    :copyable: false
@@ -42,8 +42,8 @@ comparison on the ``integer`` value ``1324324``:
       )).into( new ArrayList<> () );
    }
 
-Because the types don't match, the plugin shows a notification about the
-invalid types:
+Because ``value`` is an ``Integer`` and a ``String`` is required, the
+plugin shows a notification about the invalid type:
 
 .. code-block:: java
    :copyable: false
