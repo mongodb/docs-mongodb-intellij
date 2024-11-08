@@ -15,12 +15,13 @@ Type Validation
 Definition
 ----------
 
-The plugin examines your document fields to ensure the data types are
-valid. For example, when you enter a document field that performs an
-equality comparison, inserts or updates a document value, and so on, the
-field type is examined to ensure it is valid.
+The MongoDB IntelliJ plugin examines document fields to ensure the data
+types are valid. For example, when you use a document field that
+performs operations like equality comparisons, inserts or updates
+document values, and so on, the field type is examined to ensure it is
+valid.
 
-If your document field doesn't match the required type, the plugin shows
+If the document field doesn't match the required type, the plugin shows
 a warning that indicates the type doesn't match.
 
 Examples
