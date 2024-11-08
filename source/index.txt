@@ -1,3 +1,5 @@
+.. _intellij-index:
+
 ===========================
 {+intellij-full+}
 ===========================
@@ -5,7 +7,7 @@
 .. default-domain:: mongodb
 
 .. meta:: 
-   :description: MongoDB for IntelliJ Plugin: 
+   :description: The MongoDB for IntelliJ Plugin is a tool designed to improve the development experience for Java developers working with IntelliJ IDEA.
 
 .. contents:: On this page
    :local:
