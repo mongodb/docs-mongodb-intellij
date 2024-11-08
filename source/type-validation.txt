@@ -17,9 +17,9 @@ Definition
 
 The MongoDB IntelliJ plugin examines document fields to ensure the data
 types are valid. For example, when you use a document field that
-performs operations like equality comparisons, inserts or updates
-document values, and so on, the field type is examined to ensure it is
-valid.
+performs an operation like an equality comparison, an insert or update
+of document values, and so on, the field type is examined to ensure it
+is valid.
 
 If the document field doesn't match the required type, the plugin shows
 a warning that indicates the type doesn't match.
@@ -28,8 +28,8 @@ Examples
 --------
 
 In the following example Java code snippet, the ``trip_status`` field
-type is ``String`` but the query ``Filter`` predicate performs equality
-comparison on an ``integer`` value ``1324324``:
+type is ``String`` but the query ``Filters`` operation performs equality
+comparison on the ``integer`` value ``1324324``:
 
 .. code-block:: java
    :copyable: false
@@ -42,18 +42,21 @@ comparison on an ``integer`` value ``1324324``:
       )).into( new ArrayList<> () );
    }
 
-Because the types don't match, the plugin shows a warning about the
-mismatched types:
+Because the types don't match, the plugin shows a notification about the
+invalid types:
 
 .. code-block:: java
    :copyable: false
    
-   "Integer"(type of provided value) can not be assigned to
-   "String"(type of "trip_status")
+   "Integer" (type of provided value) can not be assigned to
+   "String" (type of "trip_status")
 
-To resolve the warning, you can change the value to match the required
-field type. Alternatively, if the field is dynamically typed and strict
-typing rules aren't applied, you can ignore the warning.
+To resolve the type issue, you can change the value to match the
+required ``String`` field type. Alternatively, if the field is
+dynamically typed and strict typing rules aren't applied, you can ignore
+the type issue.
 
 Learn More
 ----------
+
+:ref:`intellij-connect`
