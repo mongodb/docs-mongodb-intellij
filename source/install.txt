@@ -22,7 +22,7 @@ Install the MongoDB for IntelliJ Plugin
 Before You Begin 
 ----------------
 
-To install the {+intellij-short}, ensure that you installed IntelliJ IDEA 
+To install the {+intellij-short+}, ensure that you install IntelliJ IDEA 
 Ultimate 2024.1.1 or later.
 
 To check your current version of IntelliJ IDEA, open the 
@@ -46,7 +46,7 @@ Steps
 
       In the left-hand navigation column, click :guilabel:`Plugins`.
 
-   .. step:: Open the Manage Plugin Repositories modal 
+   .. step:: Open the Custom Plugin Repositories modal 
 
       Next to the :guilabel:`Installed` tab, click the gear icon to open a 
       drop-down menu and select :guilabel:`Manage Plugin Repositories`.
@@ -65,8 +65,17 @@ Steps
 
          https://plugins.jetbrains.com/plugins/beta/list
 
+   .. step:: Click OK and Restart the IDE 
 
+      After you restart the IDE, open the :guilabel:`Settings` and 
+      navigate to the :guilabel:`Plugins` menu again.
 
+   .. step:: Search for the MongoDB Plugin 
+
+      In the :guilabel:`Markplace` tab of the :guilabel:`Plugins` menu, search 
+      for ``MongoDB``. 
+
+   .. step:: Click the Install button
 
 Next Steps 
 ----------
