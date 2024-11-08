@@ -6,10 +6,70 @@ Install the MongoDB for IntelliJ Plugin
 
 .. default-domain:: mongodb
 
+.. facet::
+   :name: genre
+   :values: tutorial
+
+.. meta:: 
+   :description: Install the MongoDB for IntelliJ Plugin from the JetBrains Marketplace.
+
 .. contents:: On this page
    :local:
    :backlinks: none
    :depth: 1
    :class: singlecol
 
-Content on this page will be addressed in DOCSP-44808.
+Before You Begin 
+----------------
+
+To install the {+intellij-short}, ensure that you installed IntelliJ IDEA 
+Ultimate 2024.1.1 or later.
+
+To check your current version of IntelliJ IDEA, open the 
+:guilabel:`IntelliJ IDEA` system menu and click :guilabel:`About IntelliJ IDEA`.
+
+Steps 
+-----
+
+.. procedure:: 
+   :style: normal 
+
+   .. step:: Open the Settings menu 
+
+      Open the :guilabel:`IntelliJ IDEA` system menu and click 
+      :guilabel:`Settings`.
+
+      Alternatively, you can press :kbd:`Cmd` + :kbd:`,` on macOS or 
+      :kbd:`Ctrl` + :kbd:`Alt` + :kbd:`S` on Windows and Linux.
+
+   .. step:: Click on the Plugins tab 
+
+      In the left-hand navigation column, click :guilabel:`Plugins`.
+
+   .. step:: Open the Manage Plugin Repositories modal 
+
+      Next to the :guilabel:`Installed` tab, click the gear icon to open a 
+      drop-down menu and select :guilabel:`Manage Plugin Repositories`.
+
+      .. image:: /images/intellij-plugin-settings.png
+         :alt: Click the gear icon to open the plugin settings.
+   
+   .. step:: Add a new repository
+
+      In the :guilabel:`Custom Plugin Repositories` modal, click the 
+      :guilabel:`+` icon to add a new repository.
+
+      Paste the following URL: 
+      
+      .. code-block:: 
+
+         https://plugins.jetbrains.com/plugins/beta/list
+
+
+
+
+Next Steps 
+----------
+
+Learn More 
+----------
