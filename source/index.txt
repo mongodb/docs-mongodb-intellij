@@ -38,7 +38,6 @@ The {+intellij-short+} currently supports the following features:
 
 - :ref:`Missing index warnings <intellij-index-warning>` for Java queries.
 
-
 Get Started 
 -----------
 
@@ -52,7 +51,7 @@ Submit Feedback
 ---------------
 
 To report a bugs, request a feature, or submit general feedback, open a 
-ticket in the [MongoDB for IntelliJ Plugin JIRA project](https://jira.mongodb.org/projects/INTELLIJ/issues/INTELLIJ-143?filter=allopenissues).
+ticket in the `MongoDB for IntelliJ Plugin JIRA project <https://jira.mongodb.org/projects/INTELLIJ/issues/INTELLIJ-143?filter=allopenissues>`__.
 
 To learn more about submitting feedback, see :ref:`intellij-submit-feedback`.
 
