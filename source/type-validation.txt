@@ -32,7 +32,7 @@ Example
 
 In the following example Java code snippet, the ``trip_status`` field
 type is ``String``, but the ``Filters`` operation attempts to perform
-an equality comparison with the ``Integer`` value ``1324324``:
+an equality comparison with an ``Integer`` value ``1324324``:
 
 .. code-block:: java
    :copyable: false
