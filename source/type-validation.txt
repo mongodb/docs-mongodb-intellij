@@ -31,8 +31,8 @@ Example
 -------
 
 In the following example Java code snippet, the ``trip_status`` field
-type is ``String``, but the ``Filters`` operation attempts to performs
-equality comparison with the ``Integer`` value ``1324324``:
+type is ``String``, but the ``Filters`` operation attempts to perform
+an equality comparison with the ``Integer`` value ``1324324``:
 
 .. code-block:: java
    :copyable: false
