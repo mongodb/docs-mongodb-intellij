@@ -12,6 +12,23 @@ Missing Index Warning
    :depth: 1
    :class: singlecol
 
+Definition
+----------
+
+The {+intellij-full+} examines the document fields in queries to ensure
+the data types are valid. For example, if you use a document field in an
+equality comparison, or an insert or update operation, the
+plugin examines the field to ensure the type is valid.
+
+If the type is invalid, the plugin shows a warning that indicates
+the type cannot be assigned.
+
+To resolve the warning, change the field value to match the expected
+type. If the field is dynamically typed and strict typing rules aren't
+applied, you can ignore the invalid type warning.
+
+
+
 The plugin analyzes queries in your application to see if the query hits
 an index or not. If it does not hit an index, the plugin will display a
 warning similar to this:
