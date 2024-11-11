@@ -15,7 +15,7 @@
    :depth: 1
    :class: singlecol
 
-The {+intellij-full+} is a tool designed to improve the development experience 
+The {+intellij-full+} is designed to improve the development experience 
 for Java developers working with IntelliJ IDEA. The {+intellij-short+} builds on 
 the existing IntelliJ Database Explorer to streamline the process of writing 
 and managing MongoDB queries directly within the IDE.
