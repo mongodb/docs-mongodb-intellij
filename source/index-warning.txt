@@ -28,7 +28,6 @@ type. If the field is dynamically typed and strict typing rules aren't
 applied, you can ignore the invalid type warning.
 
 
-
 The plugin analyzes queries in your application to see if the query hits
 an index or not. If it does not hit an index, the plugin will display a
 warning similar to this:
@@ -41,7 +40,8 @@ for a faster read speed? Is there another way you can write the query to
 use existing indexes? 
 
 Note: support for Aggregation in the roadmap, feel free to comment on
-this ticket to express your interest to have Aggregations supported.
+this ticket to express your interest to have Aggregati
+ons supported.
 Creating an Index Once you have decided you want to create an index for
 the query, you can click on “Implement an Index” quick action that’s
 shown as part of the warning. It will take you to the Database Explorer
