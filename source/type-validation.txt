@@ -17,7 +17,7 @@ Definition
 
 The {+intellij-full+} examines the document fields in queries to ensure
 the data types are valid. For example, if you use a document field in an
-equality comparison, or an insert or update of document values, the
+equality comparison, or an insert or update operation, the
 plugin examines the field to ensure the type is valid.
 
 If the type is invalid, the plugin shows a warning that indicates
@@ -51,7 +51,8 @@ the plugin shows a warning about the invalid type:
 ``"Integer" (type of provided value) can not be assigned to "String"
 (type of "trip_status")``
 
-To resolve the invalid type, change the value to a ``String``.
+To resolve the invalid type, change the value to a ``String``. For
+example: ``"current"``.
 
 Learn More
 ----------
