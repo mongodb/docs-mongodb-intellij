@@ -52,7 +52,7 @@ the plugin shows a warning about the invalid type:
 (type of "trip_status")``
 
 To resolve the invalid type, change the value to a ``String``. For
-example: ``"current"``.
+example: ``"start"``.
 
 Learn More
 ----------
