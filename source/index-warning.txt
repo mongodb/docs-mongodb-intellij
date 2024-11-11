@@ -12,4 +12,31 @@ Missing Index Warning
    :depth: 1
    :class: singlecol
 
-Content on this page will be addressed in DOCSP-44966.
+The plugin analyzes queries in your application to see if the query hits
+an index or not. If it does not hit an index, the plugin will display a
+warning similar to this:
+
+
+To resolve this warning, you must first decide if you want to create an
+index for the query. Some factors to consider before indexing: Does the
+query run often enough that you are willing to compromise write speed
+for a faster read speed? Is there another way you can write the query to
+use existing indexes? 
+
+Note: support for Aggregation in the roadmap, feel free to comment on
+this ticket to express your interest to have Aggregations supported.
+Creating an Index Once you have decided you want to create an index for
+the query, you can click on “Implement an Index” quick action that’s
+shown as part of the warning. It will take you to the Database Explorer
+Playgrounds with a template code to create an index. In the first line
+of comments you’ll see recommended fields to index, which you can copy
+and paste into the template directly and run the Playground to create
+the indexes.
+
+Disable the warning If you want to disable this warning, we
+currently do not have a way to turn the switch off. The best way to
+achieve this currently is to go to Settings > search for Inspections >
+MongoDB > uncheck Query does not use an index
+
+Learn More
+----------
