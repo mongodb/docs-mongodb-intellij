@@ -15,44 +15,56 @@ Missing Index Warning
 Definition
 ----------
 
-The {+intellij-full+} examines the document fields in queries to ensure
-the data types are valid. For example, if you use a document field in an
-equality comparison, or an insert or update operation, the
-plugin examines the field to ensure the type is valid.
+The {+intellij-full+} analyzes queries in your application to examine if
+the queries use an index. If a query does not use an index, the plugin
+shows a warning that indicates the query doesn't use an index.
 
-If the type is invalid, the plugin shows a warning that indicates
-the type cannot be assigned.
+To resolve the warning, create an index for the query or disable the
+warning.
 
-To resolve the warning, change the field value to match the expected
-type. If the field is dynamically typed and strict typing rules aren't
-applied, you can ignore the invalid type warning.
+Before adding an index, consider these points:
+
+- Does the query run often enough that you are willing to compromise
+  write speed for a faster read speed?
+- Is there another way you can write the query to use existing indexes? 
+
+Example
+-------
+
+In the following example Java code snippet, the ``trip_status`` field
+type is ``String``, but the ``Filters`` operation attempts to perform
+an equality comparison with an ``Integer`` value ``1324324``:
+
+.. code-block:: java
+   :copyable: false
+   :emphasize-lines: 3
 
 
-The plugin analyzes queries in your application to see if the query hits
-an index or not. If it does not hit an index, the plugin will display a
-warning similar to this:
+This query will run without an index. If you plan on using this query
+heavily in your application, you should create an index that covers this
+query. Implement an index
 
+Create an Index
+~~~~~~~~~~~~~~~
 
-To resolve this warning, you must first decide if you want to create an
-index for the query. Some factors to consider before indexing: Does the
-query run often enough that you are willing to compromise write speed
-for a faster read speed? Is there another way you can write the query to
-use existing indexes? 
-
-Note: support for Aggregation in the roadmap, feel free to comment on
-this ticket to express your interest to have Aggregations supported.
-Creating an Index Once you have decided you want to create an index for
-the query, you can click on “Implement an Index” quick action that’s
-shown as part of the warning. It will take you to the Database Explorer
+To create an index for the query, click the “Implement an Index” quick
+action in the warning. It will take you to the Database Explorer
 Playgrounds with a template code to create an index. In the first line
-of comments you’ll see recommended fields to index, which you can copy
+of comments you'll see recommended fields to index, which you can copy
 and paste into the template directly and run the Playground to create
 the indexes.
 
-Disable the warning If you want to disable this warning, we
+Disable Warning
+~~~~~~~~~~~~~~~
+
+If you want to disable this warning, we
 currently do not have a way to turn the switch off. The best way to
 achieve this currently is to go to Settings > search for Inspections >
 MongoDB > uncheck Query does not use an index
 
 Learn More
 ----------
+
+- :ref:`intellij-connect`
+- :ref:`intellij-autocomplete`
+- :ref:`intellij-type-validation`
