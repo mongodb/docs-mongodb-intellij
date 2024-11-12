@@ -37,7 +37,7 @@ Steps
 .. procedure:: 
    :style: normal 
 
-   .. step:: Open the Settings menu 
+   .. step:: Open the Settings menu. 
 
       Open the :guilabel:`IntelliJ IDEA` system menu and click 
       :guilabel:`Settings`.
@@ -45,19 +45,19 @@ Steps
       Alternatively, you can press :kbd:`Cmd` + :kbd:`,` on macOS or 
       :kbd:`Ctrl` + :kbd:`Alt` + :kbd:`S` on Windows and Linux.
 
-   .. step:: Click on the Plugins tab 
+   .. step:: Show the Plugins tab. 
 
       In the left-hand navigation column, click :guilabel:`Plugins`.
 
-   .. step:: Open the Custom Plugin Repositories modal 
+   .. step:: Open the Custom Plugin Repositories modal. 
 
-      Next to the :guilabel:`Installed` tab, click the gear icon to open a 
+      Click the gear icon next to the :guilabel:`Installed` tab to open a 
       drop-down menu and select :guilabel:`Manage Plugin Repositories`.
 
       .. image:: /images/intellij-plugin-settings.png
          :alt: Click the gear icon to open the plugin settings.
    
-   .. step:: Add a new repository
+   .. step:: Add a new repository.
 
       In the :guilabel:`Custom Plugin Repositories` modal, click the 
       :guilabel:`+` icon to add a new repository.
@@ -68,17 +68,25 @@ Steps
 
          https://plugins.jetbrains.com/plugins/beta/list
 
-   .. step:: Click OK and Restart the IDE 
+   .. step:: Click OK and Restart the IDE. 
 
       After you restart the IDE, open the :guilabel:`Settings` and 
       navigate to the :guilabel:`Plugins` menu again.
 
-   .. step:: Search for the MongoDB Plugin 
+   .. step:: Search for the MongoDB Plugin. 
 
-      In the :guilabel:`Markplace` tab of the :guilabel:`Plugins` menu, search 
+      In the :guilabel:`Marketplace` tab of the :guilabel:`Plugins` menu, search 
       for ``MongoDB``. 
 
-   .. step:: Click the Install button
+      .. important:: 
+
+         Make sure to download the official MongoDB plugin from MongoDB Inc on 
+         the JetBrains Marketplace.
+
+   .. step:: Click the Install button.
+
+      After you install the {+intellij-short+}, click :guilabel:`OK` in the 
+      bottom right-hand corner of the :guilabel:`Settings` menu.
 
 Next Steps 
 ----------
