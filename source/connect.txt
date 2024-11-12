@@ -12,7 +12,7 @@ Connect to Your MongoDB Deployment
    :depth: 1
    :class: singlecol
 
-Content on this page will be addressed in DOCSP-44809.
+This task page shows you how to
 
 .. toctree::
    :titlesonly:
