@@ -24,32 +24,27 @@ query doesn't use an index, the plugin displays a warning.
 To resolve the warning, create an index for the query. You can also
 disable the warning.
 
-Before adding an index, consider:
+Before you add an index, consider:
 
-- Does the query run often enough that you are willing to reduce the
-  write speed for faster reads?
+- Does the query run often enough to justify reducing the write speed
+  for faster reads?
 - Can you change the query to use existing indexes? 
+
+For more information on indexes, see :ref:`manual-create-an-index`.
 
 Example
 -------
 
-In the following example Java code snippet, the ``awards.text`` field
-is used in a query, but there is no index on the field:
+In the following example Java code snippet, the ``awards.text`` document
+field is used in a query, but there is no index on the field:
 
 .. code-block:: java
    :copyable: false
    :emphasize-lines: 2
 
-   client.getDatabase("sample_mflix").getCollection("movies").find(
+   client.getDatabase("sample_database").getCollection("movies").find(
       Filters.ne("awards.text", "Comedy")
    )
-
-   public List<Document> findAllPending DisputesByTypeFare() {
-      return trips.find( Filters.and(
-         Filters.eq( fieldName: "dispute.status", value: "pending" ),
-         Filters.eq( fieldName: "dispute.type", value: "fare" )
-      )).into( new ArrayList<> () );
-   }
 
 The plugin shows a missing index warning:
 
@@ -60,8 +55,8 @@ query.``
 The warning has a *quick action* link that you can click to create an
 index for the query.
 
-Create an Index
-~~~~~~~~~~~~~~~
+Create Index
+~~~~~~~~~~~~
 
 To create an index for the query, click the *Implement an Index* quick
 action in the warning. The plugin displays initial code to create an
@@ -70,13 +65,12 @@ index.
 
 For example:
 
-// Potential fields to consider indexing: awards.text
-// Learn about creating an index: https://www.mongodb.com/docs/v7.0/core/data-model-operations/#indexes
-db.getSiblingDB("sample_mflix").getCollection("movies")
-  .createIndex({ "<your_field_1>": 1 })
+.. code-block:: java
+   :copyable: false
 
-Disable Warning
-~~~~~~~~~~~~~~~
+
+Disable Index Warning
+~~~~~~~~~~~~~~~~~~~~~
 
 To disable the index warning in the plugin, go to Settings > search for
 Inspections > MongoDB > uncheck Query does not use an index.
