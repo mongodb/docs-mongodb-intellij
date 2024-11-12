@@ -22,7 +22,7 @@ shows a warning that indicates the query doesn't use an index.
 To resolve the warning, create an index for the query or disable the
 warning.
 
-Before adding an index, consider these points:
+Before adding an index, consider:
 
 - Does the query run often enough that you are willing to compromise
   write speed for a faster read speed?
@@ -32,8 +32,7 @@ Example
 -------
 
 In the following example Java code snippet, the ``dispute.status`` field
-type is ``String``, but the ``Filters`` operation attempts to perform
-an equality comparison with an ``Integer`` value ``1324324``:
+is used in a query, but there is no index on the field:
 
 .. code-block:: java
    :copyable: false
@@ -52,17 +51,18 @@ The plugin shows a missing index warning:
 heavily in your application, you should create an index that covers this
 query.``
 
-Implement an index
+The warning also shows a clickable *quick action* to implement an index
+for the query.
 
 Create an Index
 ~~~~~~~~~~~~~~~
 
-To create an index for the query, click the “Implement an Index” quick
-action in the warning. It will take you to the Database Explorer
-Playgrounds with a template code to create an index. In the first line
-of comments you'll see recommended fields to index, which you can copy
-and paste into the template directly and run the Playground to create
-the indexes.
+To create an index for the query, click the *Implement an Index* quick
+action in the warning. You will then see the Database Explorer
+Playgrounds screen with template code to create an index. In the first
+line of comments you'll see recommended fields to index, which you can
+copy and paste into the template directly and run the Playground to
+create the indexes.
 
 Disable Warning
 ~~~~~~~~~~~~~~~
