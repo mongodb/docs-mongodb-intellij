@@ -19,7 +19,7 @@ The {+intellij-full+} is designed to improve the development experience
 for Java developers working with IntelliJ IDEA. The {+intellij-short+} builds on 
 the existing IntelliJ Database Explorer to streamline the process of writing 
 and managing MongoDB queries directly within the IDE. The {+intellij-short+} 
-supports the MongoDB :driver:`Java driver </java/>` and `Spring Data MongoDB 
+supports the :driver:`MongoDB Java driver </java/>` and `Spring Data MongoDB 
 <https://docs.spring.io/spring-data/mongodb/reference/index.html>`_.
 
 You can use the {+intellij-short+} to:
