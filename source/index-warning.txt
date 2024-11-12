@@ -19,16 +19,16 @@ Definition
 ----------
 
 The {+intellij-full+} examines application queries for index use. If a
-query doesn't use an index, the plugin shows a warning.
+query doesn't use an index, the plugin displays a warning.
 
-To resolve the warning, create an index for the query. You can disable
-the warning.
+To resolve the warning, create an index for the query. You can also
+disable the warning.
 
 Before adding an index, consider:
 
 - Does the query run often enough that you are willing to reduce the
   write speed for faster reads?
-- Is there a way to write the query to use existing indexes? 
+- Can you change the query to use existing indexes? 
 
 Example
 -------
@@ -61,11 +61,23 @@ Create an Index
 
 To create an index for the query, click the *Implement an Index* quick
 action in the warning. The plugin displays initial code to create an
-index that you can modify.
+index that you can modify. The code shows recommended fields to
+index.
 
-The code comments show recommended fields to index, which you can copy
-and paste into the template directly and run the code to create the
-indexes.
+So for this code:
+
+client.getDatabase("sample_mflix")
+                .getCollection("movies")
+                .find(
+                        Filters.ne("awards.text", "Comedy")
+                )
+
+We generate this index script:
+
+// Potential fields to consider indexing: awards.text
+// Learn about creating an index: https://www.mongodb.com/docs/v7.0/core/data-model-operations/#indexes
+db.getSiblingDB("sample_mflix").getCollection("movies")
+  .createIndex({ "<your_field_1>": 1 })
 
 Disable Warning
 ~~~~~~~~~~~~~~~
