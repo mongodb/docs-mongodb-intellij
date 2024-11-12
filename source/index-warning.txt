@@ -33,12 +33,16 @@ Before adding an index, consider:
 Example
 -------
 
-In the following example Java code snippet, the ``dispute.status`` field
+In the following example Java code snippet, the ``awards.text`` field
 is used in a query, but there is no index on the field:
 
 .. code-block:: java
    :copyable: false
-   :emphasize-lines: 3
+   :emphasize-lines: 2
+
+   client.getDatabase("sample_mflix").getCollection("movies").find(
+      Filters.ne("awards.text", "Comedy")
+   )
 
    public List<Document> findAllPending DisputesByTypeFare() {
       return trips.find( Filters.and(
@@ -64,15 +68,7 @@ action in the warning. The plugin displays initial code to create an
 index that you can modify. The code shows recommended fields to
 index.
 
-So for this code:
-
-client.getDatabase("sample_mflix")
-                .getCollection("movies")
-                .find(
-                        Filters.ne("awards.text", "Comedy")
-                )
-
-We generate this index script:
+For example:
 
 // Potential fields to consider indexing: awards.text
 // Learn about creating an index: https://www.mongodb.com/docs/v7.0/core/data-model-operations/#indexes
