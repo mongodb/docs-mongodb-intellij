@@ -24,9 +24,9 @@ warning.
 
 Before adding an index, consider:
 
-- Does the query run often enough that you are willing to compromise
-  write speed for a faster read speed?
-- Is there another way you can write the query to use existing indexes? 
+- Does the query run often enough that you are willing to reduce the
+  write speed for faster reads?
+- Is there a way to write the query to use existing indexes? 
 
 Example
 -------
