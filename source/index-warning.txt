@@ -31,7 +31,7 @@ Before adding an index, consider these points:
 Example
 -------
 
-In the following example Java code snippet, the ``trip_status`` field
+In the following example Java code snippet, the ``dispute.status`` field
 type is ``String``, but the ``Filters`` operation attempts to perform
 an equality comparison with an ``Integer`` value ``1324324``:
 
@@ -39,10 +39,20 @@ an equality comparison with an ``Integer`` value ``1324324``:
    :copyable: false
    :emphasize-lines: 3
 
+   public List<Document> findAllPending DisputesByTypeFare() {
+      return trips.find( Filters.and(
+         Filters.eq( fieldName: "dispute.status", value: "pending" ),
+         Filters.eq( fieldName: "dispute.type", value: "fare" )
+      )).into( new ArrayList<> () );
+   }
 
-This query will run without an index. If you plan on using this query
+The plugin shows a missing index warning:
+
+``This query will run without an index. If you plan on using this query
 heavily in your application, you should create an index that covers this
-query. Implement an index
+query.``
+
+Implement an index
 
 Create an Index
 ~~~~~~~~~~~~~~~
