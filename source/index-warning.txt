@@ -6,6 +6,9 @@ Missing Index Warning
 
 .. default-domain:: mongodb
 
+.. meta:: 
+   :description: The MongoDB for IntelliJ Plugin examines Java code for missing indexes.
+
 .. contents:: On this page
    :local:
    :backlinks: none
@@ -15,12 +18,11 @@ Missing Index Warning
 Definition
 ----------
 
-The {+intellij-full+} analyzes queries in your application to examine if
-the queries use an index. If a query does not use an index, the plugin
-shows a warning that indicates the query doesn't use an index.
+The {+intellij-full+} examines application queries for index use. If a
+query doesn't use an index, the plugin shows a warning.
 
-To resolve the warning, create an index for the query or disable the
-warning.
+To resolve the warning, create an index for the query. You can disable
+the warning.
 
 Before adding an index, consider:
 
@@ -51,24 +53,25 @@ The plugin shows a missing index warning:
 heavily in your application, you should create an index that covers this
 query.``
 
-The warning also shows a clickable *quick action* to implement an index
-for the query.
+The warning has a *quick action* link that you can click to create an
+index for the query.
 
 Create an Index
 ~~~~~~~~~~~~~~~
 
 To create an index for the query, click the *Implement an Index* quick
-action in the warning. You will then see the Database Explorer
-Playgrounds screen with template code to create an index. In the first
-line of comments you'll see recommended fields to index, which you can
-copy and paste into the template directly and run the Playground to
-create the indexes.
+action in the warning. The plugin displays initial code to create an
+index that you can modify.
+
+The code comments show recommended fields to index, which you can copy
+and paste into the template directly and run the code to create the
+indexes.
 
 Disable Warning
 ~~~~~~~~~~~~~~~
 
-To disable the index warning, go to Settings > search for Inspections >
-MongoDB > uncheck Query does not use an index.
+To disable the index warning in the plugin, go to Settings > search for
+Inspections > MongoDB > uncheck Query does not use an index.
 
 Learn More
 ----------
