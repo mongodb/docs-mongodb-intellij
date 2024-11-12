@@ -19,8 +19,11 @@ Install the MongoDB for IntelliJ Plugin
    :depth: 1
    :class: singlecol
 
-Before You Begin 
-----------------
+To install the {+intellij-full+} from the JetBrains Marketplace, follow the 
+steps on this page. 
+
+Prerequisites
+-------------
 
 To install the {+intellij-short+}, ensure that you install IntelliJ IDEA 
 Ultimate 2024.1.1 or later.
@@ -80,5 +83,4 @@ Steps
 Next Steps 
 ----------
 
-Learn More 
-----------
+- :ref:`intellij-connect`
