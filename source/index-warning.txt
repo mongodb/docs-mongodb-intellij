@@ -67,10 +67,8 @@ create the indexes.
 Disable Warning
 ~~~~~~~~~~~~~~~
 
-If you want to disable this warning, we
-currently do not have a way to turn the switch off. The best way to
-achieve this currently is to go to Settings > search for Inspections >
-MongoDB > uncheck Query does not use an index
+To disable the index warning, go to Settings > search for Inspections >
+MongoDB > uncheck Query does not use an index.
 
 Learn More
 ----------
