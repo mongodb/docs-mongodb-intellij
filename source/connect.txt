@@ -6,15 +6,85 @@ Connect to Your MongoDB Deployment
 
 .. default-domain:: mongodb
 
+.. facet::
+   :name: genre
+   :values: tutorial
+
+.. meta:: 
+   :description: Connect to your MongoDB deployment with the MongoDB for IntelliJ Plugin.
+
 .. contents:: On this page
    :local:
    :backlinks: none
    :depth: 1
    :class: singlecol
 
-This task page shows you how to
+This task page shows you how to connect to your MongoDB deployment using
+the {+intellij-full+}.
+
+Prerequisites
+-------------
+
+Ensure that an instance of MongoDB is running and the {+intellij-short+}
+is installed.
+
+Steps
+-----
+
+.. procedure:: 
+   :style: normal 
+
+   .. step:: Show the Database tab.
+
+      To show the :guilabel:`Database` tab, click the Database Explorer 
+      icon on the far right menu bar of IntelliJ.
+      
+      .. image:: /images/connect/intellij-database-explorer.png 
+         :alt: Click the Database Explorer icon.
+
+   .. step:: Select MongoDB as the data source.
+
+      Click the :guilabel:`+` icon, then click :guilabel:`Data Source`
+      and select ``MongoDB`` from the drop-down menu.
+
+      .. image:: /images/connect/intellij-select-data-source.png
+         :alt: Click the + button > Data Source > MongoDB.
+
+   .. step:: Enter your connection string.
+
+      Paste your connection string directly in the :guilabel:`URL` field 
+      and click OK.
+
+      .. image:: /images/connect/intellij-connection-string.png
+         :alt: Paste your connection string directly in the URL field.
+
+   .. step:: (*Optional*) Select databases to load.
+
+      You should see the connected MongoDB data source in Database 
+      Explorer. 
+
+      You can select to load as many databases as you’d like by clicking 
+      on ``1 of 11`` text as shown below:
+
+      .. image:: /images/connect/intellij-select-databases-to-load.png
+         :alt: Select the databases to load.
+
+   .. step:: (*Optional*) Launch Playgrounds.
+
+      To launch the Playgrounds, click the highlighted button in 
+      Database Explorer.
+
+      .. image:: /images/connect/intellij-launch-playgrounds.png
+         :alt: To launch the Playgrounds, click the highlighted button in Database Explorer.
 
 .. toctree::
    :titlesonly:
 
    Connections Toolbar </connect/connections-toolbar>
+
+..
+   Next Steps 
+   ----------
+
+   - <link to next step> 
+
