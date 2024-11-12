@@ -80,8 +80,8 @@ Steps
 
       .. important:: 
 
-         Make sure to download the official MongoDB plugin from MongoDB Inc on 
-         the JetBrains Marketplace.
+         Make sure to download only the official MongoDB plugin from MongoDB Inc 
+         on the JetBrains Marketplace. 
 
    .. step:: Click the Install button.
 
