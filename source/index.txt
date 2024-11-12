@@ -18,13 +18,15 @@
 The {+intellij-full+} is designed to improve the development experience 
 for Java developers working with IntelliJ IDEA. The {+intellij-short+} builds on 
 the existing IntelliJ Database Explorer to streamline the process of writing 
-and managing MongoDB queries directly within the IDE.
+and managing MongoDB queries directly within the IDE. The {+intellij-short+} 
+supports the MongoDB :driver:`Java driver </java/>` and `Spring Data MongoDB 
+<https://docs.spring.io/spring-data/mongodb/reference/index.html>`_.
 
 You can use the {+intellij-short+} to:
 
 - Connect to your MongoDB instance and interact with your data. 
 
-- Build and test Java queries faster.  
+- Write, test, and iterate Java queries faster.  
 
 - Identify query and data modeling anti-patterns in your application code.
 
@@ -53,7 +55,7 @@ Submit Feedback
 ---------------
 
 To report a bugs, request a feature, or submit general feedback, open a 
-ticket in the `MongoDB for IntelliJ Plugin JIRA project <https://jira.mongodb.org/projects/INTELLIJ/issues/INTELLIJ-143?filter=allopenissues>`__.
+ticket in the `MongoDB for IntelliJ Plugin JIRA project <https://jira.mongodb.org/projects/INTELLIJ/issues/>`__.
 
 To learn more about submitting feedback, see :ref:`intellij-submit-feedback`.
 
