@@ -48,9 +48,12 @@ field is used in a query, but there is no index on the field:
 
 The plugin shows a missing index warning:
 
-``This query will run without an index. If you plan on using this query
-heavily in your application, you should create an index that covers this
-query.``
+.. code-block:: none
+   :copyable: false
+
+   ``This query will run without an index. If you plan on using this
+   query heavily in your application, you should create an index that
+   covers this query.``
 
 The warning has a *quick action* link that you can click to create an
 index for the query.
