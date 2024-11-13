@@ -61,10 +61,9 @@ Create an Index
 ~~~~~~~~~~~~~~~
 
 To create an index for the query, click the :guilabel:`Implement an
-Index` link displayed below the missing index warning. The
-plugin displays initial code to create an index. The code shows
-recommended fields to index.
-
+Index` link displayed below the missing index warning in the plugin. The
+plugin displays the :guilabel:`Database Explorer Playgrounds` screen
+with template code that shows the recommended fields for a new index.
 For example:
 
 .. code-block:: java
@@ -77,7 +76,7 @@ For example:
 
 To create the index on the ``awards.text`` field, set ``<your_field_1>``
 to ``awards.text`` and run the :method:`~db.collection.createIndex()`
-method.
+method in the  :guilabel:`Database Explorer Playgrounds` screen.
 
 Disable Index Warning
 ~~~~~~~~~~~~~~~~~~~~~
