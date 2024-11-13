@@ -88,6 +88,10 @@ Steps
       After you install the {+intellij-short+}, click :guilabel:`OK` in the 
       bottom right-hand corner of the :guilabel:`Settings` menu.
 
+      .. image:: /images/intellij-plugin.png
+         :alt: The official MongoDB for IntelliJ Plugin on the JetBrains Marketplace.
+
+
 Next Steps 
 ----------
 
