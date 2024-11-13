@@ -74,7 +74,8 @@ For example:
    .createIndex({ "<your_field_1>": 1 })
 
 To create the index on the ``awards.text`` field, set ``<your_field_1>``
-to ``awards.text`` and run the ``createIndex`` command.
+to ``awards.text`` and run the :method:`~db.collection.createIndex()`
+command.
 
 Disable Index Warning
 ~~~~~~~~~~~~~~~~~~~~~
