@@ -24,11 +24,11 @@ query doesn't use an index, the plugin displays a warning.
 To resolve the warning, create an index for the query. You can also
 disable the warning.
 
-Before you add an index, consider:
+Before you add an index, consider if:
 
-- Does the query run often enough to justify reducing the write speed
-  for faster reads?
-- Can you change the query to use existing indexes? 
+- The query runs often enough to justify reducing the write speed
+  for faster reads.
+- You change the query to use an existing index.
 
 For more information on indexes, see :ref:`manual-create-an-index`.
 
