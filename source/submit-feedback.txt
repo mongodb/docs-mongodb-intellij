@@ -12,4 +12,67 @@ Submit Feedback
    :depth: 1
    :class: singlecol
 
-Content on this page will be addressed in DOCSP-44968.
+.. include:: /includes/fact-submit-feedback.rst
+
+Steps 
+-----
+
+.. procedure:: 
+   :style: normal 
+
+   .. step:: Open the ticket creation dialog.
+
+      To open a new ticket, click :guilabel:`Create` in the JIRA top navigation 
+      bar.
+
+   .. step:: Specify the issue type.
+
+      Open the :guilabel:`Issue Type` drop-down menu and select the appropriate 
+      issue type: 
+
+      - If you encounter a bug, select :guilabel:`Bug`.
+
+      - If you have a new feature request, select :guilabel:`New Feature`.
+
+   .. step:: Provide a summary. 
+
+      In the :guilabel:`Summary` field, provide a brief summary of the bug or
+      feature request. 
+      
+      
+   .. step:: Provide a description. 
+      
+      In the :guilabel:`Description` field, you can provide more detailed 
+      information, including the exact steps needed to reproduce the issue. 
+
+   .. step:: Set the label field.
+
+      In the :guilabel:`Label` field, include the ``internal-preview`` label.
+
+
+
+
+Retrieving Logs for Bug Reports 
+-------------------------------
+
+Log files are important for diagnosing issues with the {+intellij-full+}. To 
+retrieve 
+
+To open a bug, logs are extremely important as IntelliJ is a complex platform 
+and there are tons of edge cases. To retrieve logs, you'll need to open the Help 
+menu in the toolbar and click on Collect Logs and Diagnostic Data. A warning 
+pop up will appear mentioning that the collected information might contain 
+sensitive data. This tool will generate a zip with the following contents:
+
+General information about the IDE installation (version, host OS, host CPU, available memory, other plugins that might affect current functionality)
+Thread dumps of the current state of IntelliJ. 
+Internal state of the UI.
+OpenTelemetry metrics from IntelliJ.
+Logs of all the plugins, including ours.
+
+Include this zip file as an attachment in the new ticket.
+
+.. toctree::
+   :titlesonly:
+
+   Logs </logs>
