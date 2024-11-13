@@ -12,6 +12,11 @@ Retrieve IntelliJ Logs
    :depth: 1
    :class: singlecol
 
+This page describes how to retrieve log files from IntelliJ IDEA.
+
+About This Task 
+---------------
+
 Log files help the MongoDB development team diagnose bugs in the 
 {+intellij-full+}. When you retrieve log files, IntelliJ generates a zip with 
 the following contents:
