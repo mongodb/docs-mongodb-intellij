@@ -60,7 +60,7 @@ Create an Index
 
 To create an index for the query, click the *Implement an Index* quick
 action displayed below the missing index warning. The plugin displays
-initial code to create an index that you can modify. The code shows
+initial code to create an index. The code shows
 recommended fields to index.
 
 For example:
@@ -72,6 +72,9 @@ For example:
    // Learn about creating an index: https://www.mongodb.com/docs/v7.0/core/data-model-operations/#indexes
    db.getSiblingDB("sample_database").getCollection("movies")
    .createIndex({ "<your_field_1>": 1 })
+
+To create the index on the ``awards.text`` field, set ``<your_field_1>``
+to ``awards.text`` and run the ``createIndex`` command.
 
 Disable Index Warning
 ~~~~~~~~~~~~~~~~~~~~~
