@@ -72,7 +72,7 @@ code that shows potential fields to index. For example:
    // Potential fields to consider indexing: awards
    // Learn about creating an index: https://www.mongodb.com/docs/v7.0/core/data-model-operations/#indexes
    db.getSiblingDB("sample_database").getCollection("movies").
-   createIndex({ "<your_field_1>": 1 })
+   createIndex({"<your_field_1>": 1})
 
 To create an index for the ``awards`` field, set ``<your_field_1>``
 to ``awards`` in the example code and then run the
@@ -81,9 +81,9 @@ Explorer Playgrounds` screen. For example:
 
 .. code-block:: java
    :emphasize-lines: 2
-   
+
    db.getSiblingDB("sample_database").getCollection("movies").
-   createIndex({"awards": 1 })
+   createIndex({"awards": 1})
 
 Disable Index Warning
 ~~~~~~~~~~~~~~~~~~~~~
