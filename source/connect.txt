@@ -28,7 +28,8 @@ the {+intellij-full+}.
    `MongoDB Atlas <https://www.mongodb.com/cloud/atlas>`__.
    Atlas is a cloud-hosted database-as-a-service which requires no 
    installation, offers a free tier to get started, and provides a 
-   copyable URI to easily connect {+intellij-short+} to your deployment.
+   copyable URI to easily connect the {+intellij-short+} to your 
+   deployment.
 
 Prerequisites
 -------------
@@ -94,10 +95,8 @@ Next Steps
 ----------
 
 - :ref:`<intellij-type-validation>`
-
-.. 
-   - <link to Autocomplete doc'd in DOCSP-44964>
-   - <link to Missing Index Warning doc'd in DOCSP-44966>
+- :ref:`<intellij-autocomplete>`
+- :ref:`<intellij-index-warning>`
 
 
 .. toctree::
