@@ -76,7 +76,7 @@ For example:
 
 To create the index on the ``awards.text`` field, set ``<your_field_1>``
 to ``awards.text`` and run the :method:`~db.collection.createIndex()`
-method in the  :guilabel:`Database Explorer Playgrounds` screen.
+method in the :guilabel:`Database Explorer Playgrounds` screen.
 
 Disable Index Warning
 ~~~~~~~~~~~~~~~~~~~~~
