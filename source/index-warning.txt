@@ -18,8 +18,9 @@ Missing Index Warning
 Definition
 ----------
 
-The {+intellij-full+} examines application queries for index use. If a
-query doesn't use an index, the plugin displays a warning.
+The {+intellij-full+} examines if application queries use indexes. If a
+query doesn't use an index, the plugin displays a warning for that
+query.
 
 To resolve the warning, create an index for the query. You can also
 disable the warning.
@@ -36,7 +37,7 @@ Example
 -------
 
 In the following example Java code snippet, the ``awards.text`` document
-field is used in a query, but there is no index on the field:
+field is used in a query, but the field isn't indexed:
 
 .. code-block:: java
    :copyable: false
@@ -46,7 +47,7 @@ field is used in a query, but there is no index on the field:
       Filters.ne( "awards.text", "Comedy" )
    )
 
-The plugin shows a missing index warning:
+The plugin shows this warning:
 
 .. code-block:: none
    :copyable: false
@@ -61,10 +62,9 @@ Create an Index
 ~~~~~~~~~~~~~~~
 
 To create an index for the query, click the :guilabel:`Implement an
-Index` link displayed below the missing index warning in the plugin. The
-plugin displays the :guilabel:`Database Explorer Playgrounds` screen
-with template code that shows the recommended fields for a new index.
-For example:
+Index` link displayed below the warning in the plugin. The plugin then
+displays the :guilabel:`Database Explorer Playgrounds` screen with
+code that shows the potential fields to index. For example:
 
 .. code-block:: java
    :copyable: false
@@ -74,9 +74,10 @@ For example:
    db.getSiblingDB("sample_database").getCollection("movies")
    .createIndex({ "<your_field_1>": 1 })
 
-To create the index on the ``awards.text`` field, set ``<your_field_1>``
-to ``awards.text`` and run the :method:`~db.collection.createIndex()`
-method in the :guilabel:`Database Explorer Playgrounds` screen.
+To create the index for the ``awards.text`` field, set
+``<your_field_1>`` to ``awards.text`` in the example code and then run
+the :method:`~db.collection.createIndex()` method in the
+:guilabel:`Database Explorer Playgrounds` screen.
 
 Disable Index Warning
 ~~~~~~~~~~~~~~~~~~~~~
