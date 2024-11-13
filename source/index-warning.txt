@@ -68,12 +68,20 @@ For example:
 .. code-block:: java
    :copyable: false
 
+   // Potential fields to consider indexing: awards.text
+   // Learn about creating an index: https://www.mongodb.com/docs/v7.0/core/data-model-operations/#indexes
+   db.getSiblingDB("sample_database").getCollection("movies")
+   .createIndex({ "<your_field_1>": 1 })
 
 Disable Index Warning
 ~~~~~~~~~~~~~~~~~~~~~
 
-To disable the index warning in the plugin, go to Settings > search for
-Inspections > MongoDB > uncheck Query does not use an index.
+To disable the index warning in the plugin:
+
+1. Go to :guilabel:`Settings`.
+#. Search for :guilabel:`Inspections`.
+#. Go to :guilabel:`MongoDB`.
+#. Enable :guilabel:`Query does not use an index`.
 
 Learn More
 ----------
