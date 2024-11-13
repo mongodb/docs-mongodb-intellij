@@ -55,16 +55,13 @@ The plugin shows a missing index warning:
    query heavily in your application, you should create an index that
    covers this query.``
 
-The warning has a *quick action* link that you can click to create an
-index for the query.
-
-Create Index
-~~~~~~~~~~~~
+Create an Index
+~~~~~~~~~~~~~~~
 
 To create an index for the query, click the *Implement an Index* quick
-action in the warning. The plugin displays initial code to create an
-index that you can modify. The code shows recommended fields to
-index.
+action displayed below the missing index warning. The plugin displays
+initial code to create an index that you can modify. The code shows
+recommended fields to index.
 
 For example:
 
