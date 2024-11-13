@@ -30,7 +30,7 @@ Before you add an index, consider if:
   for faster reads.
 - you can change the query to use an existing index.
 
-For more information on indexes, see :ref:`manual-create-an-index`.
+For more information about indexes, see :ref:`manual-create-an-index`.
 
 Example
 -------
