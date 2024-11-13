@@ -83,13 +83,14 @@ Steps
          Make sure to download only the official MongoDB plugin from MongoDB Inc 
          on the JetBrains Marketplace. 
 
+         .. image:: /images/intellij-plugin.png
+            :width: 400px
+            :alt: The official MongoDB for IntelliJ Plugin on the JetBrains Marketplace.
+
    .. step:: Click the Install button.
 
       After you install the {+intellij-short+}, click :guilabel:`OK` in the 
       bottom right-hand corner of the :guilabel:`Settings` menu.
-
-      .. image:: /images/intellij-plugin.png
-         :alt: The official MongoDB for IntelliJ Plugin on the JetBrains Marketplace.
 
 
 Next Steps 
