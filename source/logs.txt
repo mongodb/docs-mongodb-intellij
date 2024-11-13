@@ -12,21 +12,33 @@ Retrieve IntelliJ Logs
    :depth: 1
    :class: singlecol
 
-About This Task 
----------------
-
-When you retrieve logs, IntelliJ generates a zip file with the following 
-contents: 
+Log files help the MongoDB development team diagnose bugs in the 
+{+intellij-full+}. When you retrieve log files, IntelliJ generates a zip with 
+the following contents:
 
 - General information about the IDE installation such as version, host OS, host 
-  CPU, available memory, and other plugins that might affect current 
-  functionality.
-- Thread dumps of the current state of IntelliJ.
-- Internal state of the UI. 
-- OpenTelemetry metrics from IntelliJ. 
-- Logs of all plugins, including the {+intellij-full+}.
+  CPU, available memory, other plugins that might affect current functionality.
+- Thread dumps of the current state of IntelliJ. 
+- Internal state of the UI.
+- OpenTelemetry metrics from IntelliJ.
+- Logs of all the plugins, including the {+intellij-full+}.
 
 Steps
 -----
 
-To retrieve logs, 
+.. procedure:: 
+   :style: normal
+
+   .. step:: In the IntelliJ top menu bar, click Help.
+
+   .. step:: In the Help menu, click Collect Logs and Diagnostic Data. 
+     
+      A pop-up warning appears, mentioning that the collected information might 
+      contain sensitive data. 
+      
+   .. step:: Click Show in Finder.
+
+Learn More 
+----------
+
+- :ref:`intellij-submit-feedback`

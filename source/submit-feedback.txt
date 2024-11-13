@@ -39,7 +39,6 @@ Steps
       In the :guilabel:`Summary` field, provide a brief summary of the bug or
       feature request. 
       
-      
    .. step:: Provide a description. 
       
       In the :guilabel:`Description` field, you can provide more detailed 
@@ -47,30 +46,24 @@ Steps
 
    .. step:: Set the label field.
 
-      In the :guilabel:`Label` field, include the ``internal-preview`` label.
+      In the :guilabel:`Labels` field, include the ``internal-preview`` label.
 
+   .. step:: (*Optional*) Add logs in the Attachment field.
 
+      Logs can help navigate edge cases and diagnose issues in the 
+      {+intellij-short+}. For information on retrieving IntelliJ logs, see 
+      :ref:`intellij-logs`.
 
+   .. step:: Submit the ticket.
 
-Retrieving Logs for Bug Reports 
--------------------------------
+      Click :guilabel:`Create` to submit the ticket.
 
-Log files are important for diagnosing issues with the {+intellij-full+}. To 
-retrieve 
+Voting on Submitted Tickets
+---------------------------
 
-To open a bug, logs are extremely important as IntelliJ is a complex platform 
-and there are tons of edge cases. To retrieve logs, you'll need to open the Help 
-menu in the toolbar and click on Collect Logs and Diagnostic Data. A warning 
-pop up will appear mentioning that the collected information might contain 
-sensitive data. This tool will generate a zip with the following contents:
-
-General information about the IDE installation (version, host OS, host CPU, available memory, other plugins that might affect current functionality)
-Thread dumps of the current state of IntelliJ. 
-Internal state of the UI.
-OpenTelemetry metrics from IntelliJ.
-Logs of all the plugins, including ours.
-
-Include this zip file as an attachment in the new ticket.
+Under the :guilabel:`People` section on the right side of the JIRA ticket, you 
+can vote for tickets. Issues with more votes are more likely to be prioritized 
+by the MongoDB development team. 
 
 .. toctree::
    :titlesonly:
