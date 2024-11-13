@@ -56,15 +56,14 @@ Steps
    .. step:: (*Optional*) Add logs in the Attachment field.
 
       Logs can help navigate edge cases and diagnose issues in the 
-      {+intellij-short+}. For information on retrieving IntelliJ logs, see 
-      :ref:`intellij-logs`.
+      {+intellij-short+}. For more information, see :ref:`intellij-logs`.
 
    .. step:: Submit the ticket.
 
       Click :guilabel:`Create` to submit the ticket.
 
-Voting on Submitted Tickets
----------------------------
+Vote on Submitted Tickets
+-------------------------
 
 Under the :guilabel:`People` section on the right side of the JIRA ticket, you 
 can vote for tickets. Issues with more votes are more likely to be prioritized 
