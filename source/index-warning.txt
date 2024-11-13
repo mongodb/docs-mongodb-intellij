@@ -51,11 +51,11 @@ The plugin shows a missing index warning:
 .. code-block:: none
    :copyable: false
 
-   ``This query will run without an index. If you plan on using this
+   This query will run without an index. If you plan on using this
    query heavily in your application, you should create an index that
    covers this query.
    
-   Implement an Index``
+   Implement an Index
 
 Create an Index
 ~~~~~~~~~~~~~~~
