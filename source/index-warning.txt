@@ -86,8 +86,9 @@ To disable the index warning in the plugin:
 
 1. Go to :guilabel:`Settings`.
 #. Search for :guilabel:`Inspections`.
-#. Go to :guilabel:`MongoDB`.
-#. Enable :guilabel:`Query does not use an index`.
+#. Expand :guilabel:`MongoDB`.
+#. Expand :guilabel:`Probable bugs`.
+#. Disable :guilabel:`Query does not use an index`.
 
 Learn More
 ----------
