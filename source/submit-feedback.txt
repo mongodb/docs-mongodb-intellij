@@ -14,6 +14,11 @@ Submit Feedback
 
 .. include:: /includes/fact-submit-feedback.rst
 
+Before You Begin 
+----------------
+
+To submit feedback and vote on issues, you must be logged in to a JIRA account.
+
 Steps 
 -----
 
