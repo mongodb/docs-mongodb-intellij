@@ -6,6 +6,13 @@ Submit Feedback
 
 .. default-domain:: mongodb
 
+.. facet:: 
+   :name: genre
+   :values: tutorial 
+
+.. meta:: 
+   :description: Submit feedback on the MongoDB for IntelliJ Plugin JIRA project.
+
 .. contents:: On this page
    :local:
    :backlinks: none
