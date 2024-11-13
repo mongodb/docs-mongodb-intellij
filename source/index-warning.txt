@@ -80,7 +80,7 @@ Explorer Playgrounds` screen. For example:
 
 .. code-block:: java
 
-   db.getSiblingDB("sample_database").getCollection("movies").createIndex({ "awards.text": 1 })
+   db.getSiblingDB("sample_database").getCollection("movies").createIndex({"awards.text": 1 })
 
 Disable Index Warning
 ~~~~~~~~~~~~~~~~~~~~~
