@@ -94,7 +94,8 @@ Disable Index Warning
 To disable the index warning in the plugin:
 
 1. Open the IntelliJ IDEA system menu and click :guilabel:`Settings`.
-#. Search for :guilabel:`Inspections`.
+#. Expand :guilabel:`Editor`.
+#. Click :guilabel:`Inspections`.
 #. Expand :guilabel:`MongoDB`.
 #. Expand :guilabel:`Probable bugs`.
 #. Disable :guilabel:`Query does not use an index`.
