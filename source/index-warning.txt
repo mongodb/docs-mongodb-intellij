@@ -22,14 +22,14 @@ The {+intellij-full+} examines if application queries use indexes. If a
 query doesn't use an index, the plugin displays a warning for that
 query.
 
-To resolve the warning, create an index for the query. You can also
-disable index warnings.
-
 Before you add an index, consider if:
 
 - the query runs often enough to justify reducing the write performance
   for faster reads.
 - you can change the query to use an existing index.
+
+To resolve the warning, consider creating an index for the query. You
+can also disable index warnings.
 
 For more information about indexes, see :ref:`manual-create-an-index`.
 
@@ -64,10 +64,13 @@ Create an Index
 To create an index for the query, click the :guilabel:`Implement an
 Index` link displayed with the warning in the plugin. The plugin then
 displays the :guilabel:`Database Explorer Playgrounds` screen with
-code that shows potential fields to index. For example:
+template code that shows potential fields to index in a comment. For
+example, the first line of the following code indicates the ``awards``
+field could be indexed:
 
 .. code-block:: java
    :copyable: false
+   :emphasize-lines: 1
 
    // Potential fields to consider indexing: awards
    // Learn about creating an index: https://www.mongodb.com/docs/v7.0/core/data-model-operations/#indexes
@@ -90,7 +93,7 @@ Disable Index Warning
 
 To disable the index warning in the plugin:
 
-1. Go to :guilabel:`Settings`.
+1. Open the IntelliJ IDEA system menu and click :guilabel:`Settings`.
 #. Search for :guilabel:`Inspections`.
 #. Expand :guilabel:`MongoDB`.
 #. Expand :guilabel:`Probable bugs`.
