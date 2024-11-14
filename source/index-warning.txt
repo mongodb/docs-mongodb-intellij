@@ -22,14 +22,15 @@ The {+intellij-full+} examines if application queries use indexes. If a
 query doesn't use an index, the plugin displays a warning for that
 query.
 
+To resolve the warning, consider creating an index for the query.
+
 Before you add an index, consider if:
 
 - the query runs often enough to justify reducing the write performance
   for faster reads.
 - you can change the query to use an existing index.
 
-To resolve the warning, consider creating an index for the query. You
-can also disable index warnings.
+You can also disable index warnings.
 
 For more information about indexes, see :ref:`manual-create-an-index`.
 
@@ -62,11 +63,13 @@ Create an Index
 ~~~~~~~~~~~~~~~
 
 To create an index for the query, click the :guilabel:`Implement an
-Index` link displayed with the warning in the plugin. The plugin then
-displays the :guilabel:`Database Explorer Playgrounds` screen with
-template code that shows potential fields to index in a comment. For
-example, the first line of the following code indicates the ``awards``
-field could be indexed:
+Index` link displayed with the warning in the plugin.
+
+The plugin then displays the :guilabel:`Database Explorer Playgrounds`
+screen with template code for creating an index. The template code also
+includes a comment that shows potential fields to index. For example,
+the first line of the following code indicates the ``awards`` field
+could be indexed:
 
 .. code-block:: java
    :copyable: false
