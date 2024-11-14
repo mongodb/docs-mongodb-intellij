@@ -71,7 +71,6 @@ includes a comment that shows potential fields to index. For example,
 the first line of the following code indicates the ``awards`` field
 could be indexed:
 
-
 .. code-block:: java
    :copyable: false
    :emphasize-lines: 1
