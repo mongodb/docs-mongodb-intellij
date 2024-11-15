@@ -44,7 +44,7 @@ field is used in a query, but the field isn't indexed in the database:
    :copyable: false
    :emphasize-lines: 2
 
-   client.getDatabase( "sample_database" ).getCollection( "movies" ).find(
+   client.getDatabase( "sample_mflix" ).getCollection( "movies" ).find(
       Filters.ne( "awards", "Comedy" )
    )
 
@@ -77,7 +77,7 @@ could be indexed:
 
    // Potential fields to consider indexing: awards
    // Learn about creating an index: https://www.mongodb.com/docs/v7.0/core/data-model-operations/#indexes
-   db.getSiblingDB("sample_database").getCollection("movies").
+   db.getSiblingDB("sample_mflix").getCollection("movies").
    createIndex({"<your_field_1>": 1})
 
 To create an index for the ``awards`` field, set ``<your_field_1>``
