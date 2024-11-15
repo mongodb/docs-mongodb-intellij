@@ -26,9 +26,9 @@ To resolve the warning, consider creating an index for the query.
 
 Before you add an index, consider if:
 
-- the query runs often enough to justify reducing the write performance
+- The query runs often enough to justify reducing the write performance
   for faster reads.
-- you can change the query to use an existing index.
+- You can change the query to use an existing index.
 
 You can also disable index warnings.
 
