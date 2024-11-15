@@ -90,6 +90,27 @@ Steps
       .. image:: /images/connect/intellij-launch-playgrounds.png
          :alt: To launch the Playgrounds, click the highlighted button in Database Explorer.
 
+   .. step:: (*Optional*) Select a data source using the Connections Toolbar.
+
+      The Connections Toolbar is a feature of the {+intellij-full+} that 
+      allows you to select a data source associated with your application
+      from within the editor window.
+      
+      When you open a file that contains MongoDB code, a toolbar appears at 
+      the top of the file as shown in the image below.
+      
+      .. image:: /images/connect/intellij-connections-toolbar.png
+         :alt: The Connections Toolbar appears at the top of the file.
+      
+      This toolbar has a drop-down that allows you to select a data source 
+      associated with your application. 
+      
+      For the best experience, the data source you select should 
+      contain the following:
+      
+      - All of the databases, collection, and fields your application code 
+        uses.
+      - All of the indexes used by your queries. 
 
 Next Steps 
 ----------
@@ -97,9 +118,3 @@ Next Steps
 - :ref:`<intellij-type-validation>`
 - :ref:`<intellij-autocomplete>`
 - :ref:`<intellij-index-warning>`
-
-
-.. toctree::
-   :titlesonly:
-
-   Connections Toolbar </connect/connections-toolbar>
