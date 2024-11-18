@@ -89,4 +89,5 @@ below shows autocomplete suggestions for fields that start with ``dis`` in the
 Learn More
 ----------
 
+- :ref:`intellij-connect`
 - :ref:`intellij-db-reference-validation`

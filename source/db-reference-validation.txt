@@ -113,4 +113,3 @@ Learn More
 
 - :ref:`intellij-connect`
 - :ref:`intellij-autocomplete`
-- :ref:`intellij-index-warning`
