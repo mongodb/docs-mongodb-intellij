@@ -80,8 +80,8 @@ methods:
 
 The {+intellij-short+} displays a drop-down list of available field names, 
 denoted by their data type and the document icon. For example, the image 
-below shows autocomplete suggestions for fields that start with ``dis`` in the 
-``trips.production`` collection: 
+below shows autocomplete suggestions for fields that start with ``rat`` in the 
+``sample_mflix.movies`` collection: 
 
 .. image:: /images/document-autocomplete.png
    :alt: Autocomplete document field names in the IntelliJ Plugin.
