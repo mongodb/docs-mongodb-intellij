@@ -27,11 +27,8 @@ To use the autocomplete feature, start typing in a document field, collection,
 or database name. Then press :kbd:`Ctrl` + :kbd:`Space` to display a drop-down 
 list that shows the available suggestions.
 
-Examples
---------
-
 Database Name Autocompletion
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 To autocomplete database names, press :kbd:`Ctrl` + :kbd:`Space` 
 inside the `getDatabase() <https://mongodb.github.io/mongo-java-driver/5.2/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClient.html#getDatabase(java.lang.String)>`__ 
@@ -45,7 +42,7 @@ the image below:
    :alt: Autocomplete database names in the IntelliJ Plugin.
 
 Collection Name Autocompletion
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 To autocomplete collection names, press :kbd:`Ctrl` + :kbd:`Space` 
 inside the `getCollection() <https://mongodb.github.io/mongo-java-driver/5.2/apidocs/mongodb-driver-sync/com/mongodb/client/MongoDatabase.html#getCollection(java.lang.String)>`__ 
@@ -66,7 +63,7 @@ the image below:
    valid collection names.
 
 Document Field Name Autocompletion 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------
 
 To autocomplete document field names, press :kbd:`Ctrl` + :kbd:`Space` 
 inside one of the following `MongoCollection <https://mongodb.github.io/mongo-java-driver/5.1/apidocs/mongodb-driver-sync/com/mongodb/client/MongoCollection.html>`__ 

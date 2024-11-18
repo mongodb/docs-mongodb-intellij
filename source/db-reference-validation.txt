@@ -37,13 +37,11 @@ To resolve the warning:
 - Verify that your database or collection contains the field you are trying to 
   reference.
 
-Examples
---------
-
-For the following examples, assume you
-
 Non-existent Field Name 
-~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
+
+If you reference a field name that doesn't exist in the collection, the 
+{+intellij-short+} raises the following warning: 
 
 .. code-block:: none
    :copyable: false 
@@ -51,7 +49,10 @@ Non-existent Field Name
    Field <fieldName> does not exist in collection <collectionName>.
 
 Non-existent Collection Name 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
+
+If you reference a collection name that doesn't exist in the database, the 
+{+intellij-short+} raises the following warning: 
 
 .. code-block:: none 
    :copyable: false 
@@ -60,7 +61,10 @@ Non-existent Collection Name
    connected data source.
 
 Non-existent Database Name
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
+
+If you reference a database that doesn't exist in the data source, the 
+{+intellij-short+} raises the following warning: 
 
 .. code-block:: none
    :copyable: false
@@ -70,30 +74,42 @@ Non-existent Database Name
 Example
 -------
 
-In the following example Java code snippet, the ``trip_status`` field
-type is ``String``, but the ``Filters`` operation attempts to perform
-an equality comparison with an ``Integer`` value ``1324324``:
+The following example references the ``sample_mflix`` database, which contains 
+data on movies and movie theaters, from the :ref:`Atlas sample datasets 
+<sample-mflix>`.
+
+The sample code attempts to call a ``restaurant_name`` collection:
 
 .. code-block:: java
    :copyable: false
    :emphasize-lines: 3
 
-   public List<Document> findCompletedTripsByDriver( String driverId ) {
-      return trips.find( Filters.and(
-         Filters.eq( fieldName: "trip_status", value: 1324324 )
-         Filters.eq( fieldName: "driver_id", driverId )
-      )).into( new ArrayList<> () );
-   }
+   public List<Document> getHundredYearOldMovies() {
+        return client.getDatabase("sample_mflix")
+            .getCollection("restaurant_name")
+            .find(Filters.eq("year", 1924))
+            .into(new ArrayList<>());
+    }
 
-Because ``value`` is an ``Integer`` but ``trip_status`` is a ``String``
-in the MongoDB documents, the plugin shows a warning about the invalid
-type:
+Because the collection doesn't exist in the ``sample_mflix`` database, the 
+{+intellij-short+} raises a warning that the collection cannot be resolved:
 
-``"Integer" (type of provided value) can not be assigned to "String"
-(type of "trip_status")``
+``Cannot resolve "restaurant_name" collection in "sample_mflix" database in the 
+connected data source.``
 
-To resolve the invalid type, change the value to a ``String``. For
-example: ``"start"``.
+To resolve the warning, reference a collection that exists in the 
+``sample_mflix`` database: 
+
+.. code-block:: java
+   :copyable: false
+   :emphasize-lines: 3
+
+   public List<Document> getHundredYearOldMovies() {
+        return client.getDatabase("sample_mflix")
+            .getCollection("movies")
+            .find(Filters.eq("year", 1924))
+            .into(new ArrayList<>());
+    }
 
 Learn More
 ----------
