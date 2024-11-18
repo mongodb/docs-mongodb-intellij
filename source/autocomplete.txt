@@ -38,11 +38,11 @@ inside the `getDatabase() <https://mongodb.github.io/mongo-java-driver/5.2/apido
 method of a ``MongoClient`` instance.
 
 The {+intellij-short+} displays a drop-down list of available database names, 
-denoted by the ``MongoDB Database`` text and the database leaf icon, as shown in 
+denoted by the ``MongoDB Database`` text and the database icon, as shown in 
 the image below: 
 
 .. image:: /images/database-autocomplete.png
-   :alt: Autocomplete database names in MongoDB for IntelliJ Plugin.
+   :alt: Autocomplete database names in the IntelliJ Plugin.
 
 Collection Name Autocompletion
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -52,12 +52,18 @@ inside the `getCollection() <https://mongodb.github.io/mongo-java-driver/5.2/api
 method of a ``MongoClient`` instance.
 
 The {+intellij-short+} displays a drop-down list of available collection names, 
-denoted by the ``MongoDB Database`` text and the database leaf icon, as shown in 
+denoted by the ``MongoDB Collection`` text and the collection icon, as shown in 
 the image below: 
 
-.. image:: /images/database-autocomplete.png
-   :alt: Autocomplete database names in MongoDB for IntelliJ Plugin.
+.. image:: /images/collection-autocomplete.png
+   :alt: Autocomplete collections names in the IntelliJ Plugin.
 
+.. important:: 
+
+   Collection name autocompletion currently requires a complete query to 
+   suggest collection names. For example, you must write a query that specifies 
+   the database name and a document field for the {+intellij-short+} to suggest 
+   the valid collection names.
 
 Document Field Name Autocompletion 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,12 +85,12 @@ methods:
 - ``updateOne``
 
 The {+intellij-short+} displays a drop-down list of available field names, 
-denoted by their data type and the database leaf icon. For example, the image 
+denoted by their data type and the document icon. For example, the image 
 below shows autocomplete suggestions for fields that start with ``dis`` in the 
 ``trips.production`` collection: 
 
 .. image:: /images/document-autocomplete.png
-   :alt: Autocomplete database names in MongoDB for IntelliJ Plugin.
+   :alt: Autocomplete document field names in the IntelliJ Plugin.
 
 Learn More
 ----------
