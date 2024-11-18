@@ -15,9 +15,6 @@ Database Reference Validation
    :depth: 1
    :class: singlecol
 
-Definition
-----------
-
 The {+intellij-full+} validates database references in your Java driver 
 code to ensure that the specified database, collection, or field exists in the 
 server.

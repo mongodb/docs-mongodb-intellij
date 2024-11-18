@@ -15,9 +15,6 @@ Autocomplete
    :depth: 1
    :class: singlecol
 
-Definition
-----------
-
 The {+intellij-full+} provides autocomplete suggestions for database, 
 collection, or field names based on the connected data source. For example, 
 when you type a field name in a query, the plugin analyzes the MongoDB 
