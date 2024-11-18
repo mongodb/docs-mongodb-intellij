@@ -63,7 +63,7 @@ the image below:
    Collection name autocompletion currently requires a complete query to 
    suggest collection names. For example, you must write a query that specifies 
    the database name and a document field for the {+intellij-short+} to suggest 
-   the valid collection names.
+   valid collection names.
 
 Document Field Name Autocompletion 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
