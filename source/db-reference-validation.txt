@@ -1,0 +1,103 @@
+.. _intellij-db-reference-validation:
+
+=============================
+Database Reference Validation
+=============================
+
+.. default-domain:: mongodb
+
+.. meta::
+   :description: Use the MongoDB for IntelliJ Plugin to verify that specified databases, collections, and document fields exist in your data source.
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+Definition
+----------
+
+The {+intellij-full+} validates database references in your Java driver 
+code to ensure that the specified database, collection, or field exists in the 
+server.
+
+If you reference a field, collection, or database name that isn't in 
+your data source, the plugin shows a warning that indicates the reference 
+doesn't exist.
+
+To resolve the warning:
+
+- Ensure that you're connected to the correct data source in the Connections 
+  Toolbar.
+
+- Check that you're referencing the correct database and collection in your 
+  code. 
+  
+- Verify that your database or collection contains the field you are trying to 
+  reference.
+
+Examples
+--------
+
+For the following examples, assume you
+
+Non-existent Field Name 
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: none
+   :copyable: false 
+
+   Field <fieldName> does not exist in collection <collectionName>.
+
+Non-existent Collection Name 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: none 
+   :copyable: false 
+
+   Cannot resolve <collectionName> collection in <dbName> database in the 
+   connected data source.
+
+Non-existent Database Name
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: none
+   :copyable: false
+
+   Cannot resolve <dbName> database reference in the connected data source. 
+
+Example
+-------
+
+In the following example Java code snippet, the ``trip_status`` field
+type is ``String``, but the ``Filters`` operation attempts to perform
+an equality comparison with an ``Integer`` value ``1324324``:
+
+.. code-block:: java
+   :copyable: false
+   :emphasize-lines: 3
+
+   public List<Document> findCompletedTripsByDriver( String driverId ) {
+      return trips.find( Filters.and(
+         Filters.eq( fieldName: "trip_status", value: 1324324 )
+         Filters.eq( fieldName: "driver_id", driverId )
+      )).into( new ArrayList<> () );
+   }
+
+Because ``value`` is an ``Integer`` but ``trip_status`` is a ``String``
+in the MongoDB documents, the plugin shows a warning about the invalid
+type:
+
+``"Integer" (type of provided value) can not be assigned to "String"
+(type of "trip_status")``
+
+To resolve the invalid type, change the value to a ``String``. For
+example: ``"start"``.
+
+Learn More
+----------
+
+- :ref:`intellij-connect`
+- :ref:`intellij-autocomplete`
+- :ref:`intellij-index-warning`

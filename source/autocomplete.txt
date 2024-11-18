@@ -6,10 +6,74 @@ Autocomplete
 
 .. default-domain:: mongodb
 
+.. meta::
+   :description: Use the MongoDB for IntelliJ Plugin to autocomplete database, collection, and document field names.
+
 .. contents:: On this page
    :local:
    :backlinks: none
    :depth: 1
    :class: singlecol
 
-Content on this page will be addressed in DOCSP-44964.
+Definition
+----------
+
+The {+intellij-full+} provides autocomplete suggestions for database, 
+collection, or field names based on the connected data source. For example, 
+when you type a field name in a query, the plugin analyzes the MongoDB 
+collection or document schema to automatically suggest valid field names. 
+
+To use the autocomplete feature, start typing in a document field, collection, 
+or database name. Then press :kbd:`Ctrl` + :kbd:`Space` to display a drop-down 
+menu that shows the available suggestions.
+
+Examples
+--------
+
+Database Name Autocompletion
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To autocomplete database names, press :kbd:`Ctrl` + :kbd:`Space` 
+inside the `getDatabase() <https://mongodb.github.io/mongo-java-driver/5.2/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClient.html#getDatabase(java.lang.String)>`__ 
+method of a ``MongoClient`` instance.
+
+The {+intellij-short+} displays a drop-down list of available database names, 
+denoted by the ``MongoDB Database`` text and the database leaf icon, as shown in 
+the image below: 
+
+.. image:: /images/database-autocomplete.png
+   :alt: Autocomplete database names in MongoDB for IntelliJ Plugin.
+
+Collection Name Autocompletion
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To autocomplete collection names, press :kbd:`Ctrl` + :kbd:`Space` 
+inside the `getCollection() <https://mongodb.github.io/mongo-java-driver/5.2/apidocs/mongodb-driver-sync/com/mongodb/client/MongoDatabase.html#getCollection(java.lang.String)>`__ 
+method of a ``MongoClient`` instance.
+
+The {+intellij-short+} displays a drop-down list of available database names, 
+denoted by the ``MongoDB Database`` text and the database leaf icon, as shown in 
+the image below: 
+
+.. image:: /images/database-autocomplete.png
+   :alt: Autocomplete database names in MongoDB for IntelliJ Plugin.
+
+
+Document Field Name Autocompletion 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To autocomplete document field names, press :kbd:`Ctrl` + :kbd:`Space` 
+inside the :ref:`find() <retrieve-find>` method.
+
+The {+intellij-short+} displays a drop-down list of available field names, 
+denoted by their data type and the database leaf icon. For example, the image 
+below shows autocomplete suggestions for fields that start with ``dis`` in the 
+``trips.production`` collection: 
+
+.. image:: /images/document-autocomplete.png
+   :alt: Autocomplete database names in MongoDB for IntelliJ Plugin.
+
+Learn More
+----------
+
+- :ref:`intellij-db-reference-validation`
