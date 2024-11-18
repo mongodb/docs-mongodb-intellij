@@ -69,3 +69,4 @@ To learn more about submitting feedback, see :ref:`intellij-submit-feedback`.
    Missing Index Warning </index-warning>
    Release Notes <https://github.com/mongodb-js/intellij/blob/main/CHANGELOG.md>
    Submit Feedback </submit-feedback>
+   Run Java Queries </run-java-queries>
