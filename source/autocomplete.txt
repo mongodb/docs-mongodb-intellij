@@ -18,7 +18,7 @@ Autocomplete
 The {+intellij-full+} provides autocomplete suggestions for database, 
 collection, or field names based on the connected data source. For example, 
 when you type a field name in a query, the plugin analyzes the MongoDB 
-collection or document schema to automatically suggest valid field names. 
+collection and document schema to automatically suggest valid field names. 
 
 To use the autocomplete feature, start typing in a document field, collection, 
 or database name. Then press :kbd:`Ctrl` + :kbd:`Space` to display a drop-down 

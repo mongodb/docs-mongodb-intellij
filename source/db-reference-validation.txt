@@ -15,9 +15,9 @@ Database Reference Validation
    :depth: 1
    :class: singlecol
 
-The {+intellij-full+} validates database references in your Java driver 
-code to ensure that the specified database, collection, or field exists in the 
-server.
+The {+intellij-full+} validates database references in your Java driver or 
+Spring Criteria code to ensure that the specified database, collection, or field 
+exists in the server.
 
 If you reference a field, collection, or database name that isn't in 
 your data source, the plugin shows a warning that indicates the reference 
