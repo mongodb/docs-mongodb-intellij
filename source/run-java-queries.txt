@@ -12,11 +12,11 @@ Run Java Queries
    :depth: 1
    :class: singlecol
 
-Use Cases
----------
+Definition
+----------
 
 The {+intellij-full+} enables you to run queries written in Java directly 
-in the Database Explorer playgrounds. 
+in the Database Explorer Playgrounds. 
 
 The Run button appears next to your MongoDB queries.
 
@@ -26,17 +26,32 @@ The Run button appears next to your MongoDB queries.
 Behavior
 --------
 
-When you click the Run button, the plugin automatically:
+When you click the Run button, the plugin automatically converts your 
+Java query to ``mongosh`` syntax and opens a Playground file with the 
+populated query.
 
-- Converts your Java query to ``mongosh`` syntax. 
-- Maps it directly to your original query. 
-- Opens a Playground file with the populated query.
+For field values that are variables determined at runtime, the plugin 
+creates a placeholder variable. You can populate this placeholder with 
+a test value and run the query in the Playground. 
 
 Example
 -------
 
-The code example below shows the converted query from the code in the 
-image above.
+In this example, the Java query on the ``production.trips`` collection
+looks similar to the following:
+
+.. code:: java
+   :copyable: false
+
+   public List<Document> findCompletedTripsByDriver(String driverId) {
+      return trips.find(Filters.and(
+              Filters.eq(fieldName: "trip_status", value: "completed"),
+              Filters.eq(fieldName: "driver_id", driverId)
+      )).into(new ArrayList<>());
+   }
+
+The code example below shows the converted query from the Java code 
+above.
 
 .. code:: javascript
    :copyable: false
@@ -46,17 +61,15 @@ image above.
    db.getSiblingsDB("production")
      .getCollection("trips")
      .find( { 
-        "$and": [ 
+        "$and" : [ 
            { "trips.status" : "completed" },
            { "driver_id" : driver_id }
         ]
       )
 
 In this example, ``driver_id`` is a variable that holds a value 
-determined at runtime. For field values that are variables determined 
-at runtime, the plugin creates a placeholder variable. You can populate 
-this placeholder with a test value and run the query in the playground. 
+determined at runtime.
 
-Once you are satisfied with the query, you can run it in the playground 
+Once you are satisfied with the query, you can run it in the Playground 
 and view the query results.
 

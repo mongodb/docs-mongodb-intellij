@@ -13,3 +13,8 @@ Autocomplete
    :class: singlecol
 
 Content on this page will be addressed in DOCSP-44964.
+
+Learn More
+----------
+
+- :ref:`intellij-run-java-queries`

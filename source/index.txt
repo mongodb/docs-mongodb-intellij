@@ -37,10 +37,10 @@ The {+intellij-short+} currently supports the following features:
 
 - :ref:`Autocomplete <intellij-autocomplete>` for database, collection, and 
   document field names. 
-
 - :ref:`Type validation <intellij-type-validation>` of document fields.
-
 - :ref:`Missing index warnings <intellij-index-warning>` for Java queries.
+- :ref:`Run Java Queries <intellij-run-java-queries>` directly in the
+  Database Explorer Playgrounds.
 
 Get Started 
 -----------
@@ -67,6 +67,6 @@ To learn more about submitting feedback, see :ref:`intellij-submit-feedback`.
    Autocomplete </autocomplete>
    Type Validation </type-validation>
    Missing Index Warning </index-warning>
+   Run Java Queries </run-java-queries>
    Release Notes <https://github.com/mongodb-js/intellij/blob/main/CHANGELOG.md>
    Submit Feedback </submit-feedback>
-   Run Java Queries </run-java-queries>
