@@ -37,6 +37,7 @@ The {+intellij-short+} currently supports the following features:
 
 - :ref:`Autocomplete <intellij-autocomplete>` for database, collection, and 
   document field names. 
+- :ref:`Database reference validation <intellij-db-reference-validation>`.
 - :ref:`Type validation <intellij-type-validation>` of document fields.
 - :ref:`Missing index warnings <intellij-index-warning>` for Java queries.
 - :ref:`Run Java Queries <intellij-run-java-queries>` directly in the
@@ -65,6 +66,7 @@ To learn more about submitting feedback, see :ref:`intellij-submit-feedback`.
    Install </install>
    Connect </connect>
    Autocomplete </autocomplete>
+   Database Reference Validation </db-reference-validation>
    Type Validation </type-validation>
    Missing Index Warning </index-warning>
    Run Java Queries </run-java-queries>
