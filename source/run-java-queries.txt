@@ -54,22 +54,27 @@ The code example below shows the converted query from the Java code
 above.
 
 .. code:: javascript
-   :copyable: false
+   :copyable: true
 
-   var driver_id = ""
+   var driver_id = "<driver ID>"
 
    db.getSiblingsDB("production")
      .getCollection("trips")
      .find( { 
         "$and" : [ 
-           { "trips.status" : "completed" },
+           { "trip_status" : "completed" },
            { "driver_id" : driver_id }
         ]
       )
 
 In this example, ``driver_id`` is a variable that holds a value 
-determined at runtime.
+determined at runtime. In order to test that your query outputs the 
+results you expect, you must specify a test value by replacing 
+``<driver ID>`` with the driver ID. For example, 
+``driver_id = "1a2b3c4d5e"``.
 
 Once you are satisfied with the query, you can run it in the Playground 
 and view the query results.
 
+.. image:: /images/run-queries/intellij-pg-icon-converted-query.png
+   :alt: Click the Run button to run your query and view the results.
