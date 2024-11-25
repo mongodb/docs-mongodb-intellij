@@ -15,7 +15,7 @@ Run Java Queries
    :values: java
 
 .. meta::
-   :keywords: code example, java sync, java async
+   :keywords: code example, java sync, java async, mongosh
    :description: Use the MongoDB for IntelliJ Plugin to run Java queries in the Database Explorer Playgrounds.
 
 .. contents:: On this page

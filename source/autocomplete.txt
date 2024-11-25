@@ -15,7 +15,7 @@ Autocomplete
    :values: java
 
 .. meta:: 
-   :keywords: code example, java sync, java async
+   :keywords: code example, java sync, java async, sample dataset
    :description: Use the MongoDB for IntelliJ Plugin to autocomplete database, collection, and document field names.
 
 .. contents:: On this page
