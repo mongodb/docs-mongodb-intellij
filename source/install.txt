@@ -56,7 +56,7 @@ Steps
       :guilabel:`Manage Plugin Repositories`.
 
       .. image:: /images/intellij-plugin-settings.png
-         :alt: Click the gear icon to open the plugin settings modal.
+         :alt: Click the gear icon to open the plugin settings.
    
    .. step:: Add a new repository.
 

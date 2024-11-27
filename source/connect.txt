@@ -50,7 +50,6 @@ Steps
       
       .. image:: /images/connect/intellij-database-explorer.png 
          :alt: Click the Database Explorer icon.
-         :width: 600px
 
    .. step:: Select MongoDB as the data source.
 
@@ -59,7 +58,6 @@ Steps
 
       .. image:: /images/connect/intellij-select-data-source.png
          :alt: Click the + button > Data Source > MongoDB.
-         :width: 600px
 
    .. step:: Enter your connection string.
 
@@ -83,7 +81,6 @@ Steps
 
       .. image:: /images/connect/intellij-select-databases-to-load.png
          :alt: Select the databases to load.
-         :width: 600px
 
    .. step:: Select a data source using the Connections Toolbar.
 
@@ -114,8 +111,6 @@ Steps
 
       .. image:: /images/connect/intellij-launch-playgrounds.png
          :alt: To launch the Playgrounds, click the highlighted button in Database Explorer.
-         :width: 600px
-
 
 Next Steps 
 ----------
