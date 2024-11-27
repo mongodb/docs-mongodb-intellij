@@ -123,3 +123,8 @@ Next Steps
 - :ref:`<intellij-autocomplete>`
 - :ref:`<intellij-type-validation>`
 - :ref:`<intellij-index-warning>`
+
+Learn More 
+----------
+
+- :ref:`mongodb-uri`
