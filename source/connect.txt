@@ -79,7 +79,7 @@ Steps
       Explorer. 
 
       You can load as many databases as you’d like by clicking on 
-      ``1 of 11`` text as shown in the image below.
+      ``1 of 11`` text as shown in the following image.
 
       .. image:: /images/connect/intellij-select-databases-to-load.png
          :alt: Select the databases to load.
@@ -92,7 +92,7 @@ Steps
       from within the editor window.
       
       When you open a file that contains MongoDB code, a toolbar appears at 
-      the top of the file as shown in the image below.
+      the top of the file as shown in the following image.
       
       .. image:: /images/connect/intellij-connections-toolbar.png
          :alt: The Connections Toolbar appears at the top of the file.

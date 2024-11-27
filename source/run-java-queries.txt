@@ -27,7 +27,7 @@ Behavior
 --------
 
 When you click the Run button, the plugin automatically converts your 
-Java query to ``mongosh`` syntax and opens a Playground file with the 
+Java query to :binary:`~bin.mongosh` syntax and opens a Playground file with the 
 populated query.
 
 For field values that are variables determined at runtime, the plugin 
@@ -50,8 +50,8 @@ resembles the following:
       )).into(new ArrayList<>());
    }
 
-The code example below shows the converted query from the Java code 
-above.
+The following code example shows the converted query from the Java code 
+above:
 
 .. code:: javascript
    :copyable: true
@@ -78,3 +78,4 @@ and view the query results.
 
 .. image:: /images/run-queries/intellij-pg-icon-converted-query.png
    :alt: Click the Run button to run your query and view the results.
+   :width: 600px
