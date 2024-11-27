@@ -79,8 +79,3 @@ and view the query results.
 .. image:: /images/run-queries/intellij-pg-icon-converted-query.png
    :alt: Click the Run button to run your query and view the results.
    :width: 600px
-
-Learn More 
-----------
-
-- :ref:`mongosh <mdb-shell-overview>`
