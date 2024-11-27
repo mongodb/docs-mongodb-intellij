@@ -18,15 +18,16 @@ About This Task
 ---------------
 
 Log files help the MongoDB development team diagnose bugs in the 
-{+intellij-short+}. When you retrieve log files, IntelliJ generates a zip with 
+{+intellij-short+}. When you retrieve logs, IntelliJ generates a zip file with 
 the following contents:
 
 - General information about the IDE installation such as version, host OS, host 
-  CPU, available memory, other plugins that might affect current functionality.
+  CPU, available memory, and other plugins that might affect current 
+  functionality.
 - Thread dumps of the current state of IntelliJ. 
 - Internal state of the UI.
 - OpenTelemetry metrics from IntelliJ.
-- Logs of all the plugins, including the {+intellij-full+}.
+- Logs of all plugins, including the {+intellij-full+}.
 
 Steps
 -----

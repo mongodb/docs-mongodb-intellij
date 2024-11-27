@@ -31,11 +31,11 @@ the {+intellij-full+}.
    copyable URI to easily connect the {+intellij-short+} to your 
    deployment.
 
-Prerequisites
--------------
+Before You Begin
+----------------
 
 Ensure that an instance of MongoDB is running and the {+intellij-short+}
-is installed.
+is :ref:`installed <intellij-install>`.
 
 Steps
 -----
@@ -50,6 +50,7 @@ Steps
       
       .. image:: /images/connect/intellij-database-explorer.png 
          :alt: Click the Database Explorer icon.
+         :width: 600px
 
    .. step:: Select MongoDB as the data source.
 
@@ -58,6 +59,7 @@ Steps
 
       .. image:: /images/connect/intellij-select-data-source.png
          :alt: Click the + button > Data Source > MongoDB.
+         :width: 600px
 
    .. step:: Enter your connection string.
 
@@ -73,14 +75,15 @@ Steps
 
    .. step:: (*Optional*) Select databases to load.
 
-      You should see the connected MongoDB data source in Database 
+      You will see the connected MongoDB data source in Database 
       Explorer. 
 
       You can load as many databases as you’d like by clicking on 
-      ``1 of 11`` text as shown below:
+      ``1 of 11`` text as shown in the image below.
 
       .. image:: /images/connect/intellij-select-databases-to-load.png
          :alt: Select the databases to load.
+         :width: 600px
 
    .. step:: Select a data source using the Connections Toolbar.
 
@@ -94,7 +97,7 @@ Steps
       .. image:: /images/connect/intellij-connections-toolbar.png
          :alt: The Connections Toolbar appears at the top of the file.
       
-      This toolbar has a drop-down that allows you to select a data source 
+      This toolbar has a drop-down menu that allows you to select a data source 
       associated with your application. 
       
       For the best experience, the data source you select should 
@@ -111,11 +114,12 @@ Steps
 
       .. image:: /images/connect/intellij-launch-playgrounds.png
          :alt: To launch the Playgrounds, click the highlighted button in Database Explorer.
+         :width: 600px
 
 
 Next Steps 
 ----------
 
-- :ref:`<intellij-type-validation>`
 - :ref:`<intellij-autocomplete>`
+- :ref:`<intellij-type-validation>`
 - :ref:`<intellij-index-warning>`
