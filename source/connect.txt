@@ -58,7 +58,7 @@ Steps
 
       .. image:: /images/connect/intellij-select-data-source.png
          :alt: Click the + button > Data Source > MongoDB.
-         :width: 400px
+         :width: 500px
 
    .. step:: Enter your connection string.
 
