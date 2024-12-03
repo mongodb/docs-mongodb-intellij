@@ -25,8 +25,7 @@ steps on this page.
 Before You Begin
 ----------------
 
-To install the {+intellij-short+}, ensure that you install IntelliJ IDEA 
-Ultimate 2024.1.1 or later.
+Ensure that you install IntelliJ IDEA Ultimate 2024.1.1 or later.
 
 To check your current version of IntelliJ IDEA, open the 
 :guilabel:`IntelliJ IDEA` system menu and click :guilabel:`About IntelliJ IDEA`.
@@ -42,8 +41,8 @@ Steps
       Open the :guilabel:`IntelliJ IDEA` system menu and click 
       :guilabel:`Settings`.
 
-      Alternatively, you can press :kbd:`Cmd` + :kbd:`,` on macOS or 
-      :kbd:`Ctrl` + :kbd:`Alt` + :kbd:`S` on Windows and Linux.
+      Alternatively, press :kbd:`Cmd` + :kbd:`,` on macOS or :kbd:`Ctrl` + 
+      :kbd:`Alt` + :kbd:`S` on Windows and Linux.
 
    .. step:: Show the Plugins settings. 
 
@@ -90,8 +89,7 @@ Steps
 
    .. step:: Click the Install button.
 
-      After you install the {+intellij-short+}, click :guilabel:`OK` in the 
-      bottom right-hand corner of the :guilabel:`Settings` menu.
+      After you install the {+intellij-short+}, click :guilabel:`OK`.
 
 
 Next Steps 

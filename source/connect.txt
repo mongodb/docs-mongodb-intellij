@@ -19,7 +19,7 @@ Connect to Your MongoDB Deployment
    :depth: 1
    :class: singlecol
 
-This task page shows you how to connect to your MongoDB deployment using
+On this page, you'll learn how to connect to your MongoDB deployment using
 the {+intellij-full+}.
 
 .. note:: MongoDB Atlas
@@ -58,6 +58,7 @@ Steps
 
       .. image:: /images/connect/intellij-select-data-source.png
          :alt: Click the + button > Data Source > MongoDB.
+         :width: 400px
 
    .. step:: Enter your connection string.
 
@@ -73,8 +74,7 @@ Steps
 
    .. step:: (*Optional*) Select databases to load.
 
-      You will see the connected MongoDB data source in Database 
-      Explorer. 
+      Find the connected MongoDB data source in Database Explorer. 
 
       You can load as many databases as you’d like by clicking on 
       ``1 of 11`` text as shown in the following image.

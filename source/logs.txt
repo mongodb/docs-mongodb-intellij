@@ -35,14 +35,20 @@ Steps
 .. procedure:: 
    :style: normal
 
-   .. step:: In the IntelliJ top menu bar, click Help.
+   .. step:: Open the Help menu. 
+      
+      In the IntelliJ top menu bar, click :guilabel:`Help`.
 
-   .. step:: In the Help menu, click Collect Logs and Diagnostic Data. 
-     
+   .. step:: Click Collect Logs and Diagnostic Data. 
+
+      In the drop-down menu, click :guilabel:`Collect Logs and Diagnostic Data`.
+      
       A pop-up warning appears, mentioning that the collected information might 
       contain sensitive data. 
       
-   .. step:: Click Show in Finder.
+   .. step:: Download the log files.
+      
+      Click Show in Finder.
 
 Learn More 
 ----------
