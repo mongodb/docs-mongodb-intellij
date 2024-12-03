@@ -50,6 +50,7 @@ Steps
       
       .. image:: /images/connect/intellij-database-explorer.png 
          :alt: Click the Database Explorer icon.
+         :width: 600px
 
    .. step:: Select MongoDB as the data source.
 
@@ -58,7 +59,7 @@ Steps
 
       .. image:: /images/connect/intellij-select-data-source.png
          :alt: Click the + button > Data Source > MongoDB.
-         :width: 500px
+         :width: 600px
 
    .. step:: Enter your connection string.
 
