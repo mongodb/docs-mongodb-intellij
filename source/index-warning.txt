@@ -1,8 +1,8 @@
 .. _intellij-index-warning:
 
-=====================
-Missing Index Warning
-=====================
+==========================
+Index Performance Warnings
+==========================
 
 .. default-domain:: mongodb
 
@@ -28,8 +28,8 @@ Definition
 ----------
 
 The {+intellij-full+} examines if application queries use indexes. If a
-query doesn't use an index, the plugin displays a warning for that
-query.
+query doesn't use an index or is only partially covered by an index, the plugin 
+displays a warning for that query.
 
 To resolve the warning, consider creating an index for the query.
 
@@ -57,37 +57,30 @@ field is used in a query, but the field isn't indexed in the database:
       Filters.ne( "awards", "Comedy" )
    )
 
-The plugin shows this warning:
+The side panel shows the following warning:
 
-.. code-block:: none
-   :copyable: false
-
-   This query will run without an index. If you plan on using this
-   query heavily in your application, you should create an index that
-   covers this query.
-   
-   Implement an Index
+.. image:: /images/index-warning.png
+   :alt: Index warning in the IntelliJ Plugin.
 
 Create an Index
 ~~~~~~~~~~~~~~~
 
-To create an index for the query, click the :guilabel:`Implement an
-Index` link displayed with the warning in the plugin.
+To create an index for the query, click the :guilabel:`Create an
+Index` button displayed in the side panel warning.
 
 The plugin then displays the :guilabel:`Database Explorer Playgrounds`
-screen with template code for creating an index. The template code also
-includes a comment that shows potential fields to index. For example,
-the first line of the following code indicates the ``awards`` field
-could be indexed:
+screen with template code for creating an index:
 
 .. code-block:: java
    :copyable: false
    :emphasize-lines: 1
 
-   // Potential fields to consider indexing: awards
+   // region Queries covered by this index 
+   // alt.mongodb.javadriver.JavaDriverRepository#getRatings at line 32
+   // endregion 
    // Learn about creating an index: https://www.mongodb.com/docs/v7.0/core/data-model-operations/#indexes
-   db.getSiblingDB("sample_mflix").getCollection("movies").
-   createIndex({"<your_field_1>": 1})
+   db.getSiblingDB("sample_mflix").getCollection("movies")
+      .createIndex({ "awards": 1 })
 
 To create an index for the ``awards`` field, set ``<your_field_1>``
 to ``awards`` in the example code and then run the
@@ -103,14 +96,30 @@ Explorer Playgrounds` screen. For example:
 Disable Index Warning
 ~~~~~~~~~~~~~~~~~~~~~
 
-To disable the index warning in the plugin:
+To disable the index warning in the side panel:
 
-1. Open the IntelliJ IDEA system menu and click :guilabel:`Settings`.
-#. Expand :guilabel:`Editor`.
-#. Click :guilabel:`Inspections`.
-#. Expand :guilabel:`MongoDB`.
-#. Expand :guilabel:`Probable bugs`.
-#. Disable :guilabel:`Query does not use an index`.
+.. procedure:: 
+   :style: normal
+   
+   .. step:: Click the :icon-lg:`VerticalEllipsis` icon next to the warning.
+      
+   .. step:: Click :guilabel:`Disable Inspection`.
+
+      When you click :guilabel:`Disable Inspection`, the plugin disables all 
+      index warnings for the project.
+
+If you previously disabled index warnings and want to re-enable the insight: 
+
+.. procedure:: 
+   :style: normal
+
+   .. step:: Under :guilabel:`Performance Warnings`, click :guilabel:`Show disabled inspections`.``
+   .. step:: Click the :icon-lg:`VerticalEllipsis` icon next to the warning.
+
+   .. step:: Click :guilabel:`Enable Inspection`.
+
+      When you click :guilabel:`Enable Inspection`, the plugin re-enables all 
+      index warnings for the project.
 
 Learn More
 ----------
