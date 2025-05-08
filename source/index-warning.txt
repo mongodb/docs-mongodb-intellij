@@ -57,7 +57,8 @@ field is used in a query, but the field isn't indexed in the database:
       Filters.ne( "awards", "Comedy" )
    )
 
-The side panel shows the following warning:
+The side panel shows the following warning under 
+:guilabel:`Performance Warnings`:
 
 .. image:: /images/index-warning.png
    :alt: Index warning in the IntelliJ Plugin.
@@ -113,13 +114,11 @@ If you previously disabled index warnings and want to re-enable the insight:
 .. procedure:: 
    :style: normal
 
-   .. step:: Under :guilabel:`Performance Warnings`, click :guilabel:`Show disabled inspections`.``
-   .. step:: Click the :icon-lg:`VerticalEllipsis` icon next to the warning.
+   .. step:: Under :guilabel:`Performance Warnings`, click :guilabel:`Show disabled inspections`.
+      
+   .. step:: Click the :icon-lg:`VerticalEllipsis` icon next to the hidden warning.
 
    .. step:: Click :guilabel:`Enable Inspection`.
-
-      When you click :guilabel:`Enable Inspection`, the plugin re-enables all 
-      index warnings for the project.
 
 Learn More
 ----------
