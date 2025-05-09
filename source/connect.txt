@@ -67,6 +67,32 @@ Steps
       
       Click :guilabel:`OK`.
 
+   .. step:: View insights for your MongoDB deployment.
+
+      After you connect to your deployment, you can see all the generated 
+      insights for your workspace. 
+
+      .. image:: /images/connect/intellij-insights.png
+         :alt: View insights for your MongoDB deployment.
+         :width: 600px
+
+      The {+intellij-short+} includes four options to view your 
+      :guilabel:`Insights`:
+      
+      - :guilabel:`All insights`: Includes insights for all packages in your 
+        workspace.
+
+      - :guilabel:`Recommended Insights`: Includes insights for the most common 
+        parent package. This ensures that insights are relevant to all files 
+        and their shared context within the broader structure of your 
+        application.
+
+      - :guilabel:`Current File`: Includes insights to just the currently open 
+        file.
+
+      - :guilabel:`Current Query`: Includes insights for the query where the 
+        keyboard cursor is located.
+
    .. step:: (*Optional*) Connect to another MongoDB deployment. 
 
       To add another data source, click the :guilabel:`+` icon, 
