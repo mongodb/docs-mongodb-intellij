@@ -68,6 +68,11 @@ If you reference a collection name that doesn't exist in the database, the
    Cannot resolve <collectionName> collection in <dbName> database in the 
    connected data source.
 
+To resolve the warning, ensure that the referenced collection exists in your 
+database. Alternatively, you can click :guilabel:`Choose a connection` in the 
+side panel to select a different data source that contains the referenced 
+collection.
+
 Non-existent Database Name
 --------------------------
 
@@ -79,6 +84,11 @@ If you reference a database that doesn't exist in the data source, the
    :copyable: false
 
    Cannot resolve <dbName> database reference in the connected data source. 
+
+To resolve the warning, ensure that the referenced database exists in your 
+deployment. Alternatively, you can click :guilabel:`Choose a connection` in the 
+side panel to select a different data source that contains the referenced 
+database.
 
 Example
 -------
