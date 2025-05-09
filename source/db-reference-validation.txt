@@ -47,18 +47,20 @@ Non-existent Field Name
 ------------------------
 
 If you reference a field name that doesn't exist in the collection, the 
-{+intellij-short+} raises the following warning: 
+{+intellij-short+} raises the following warning in the side panel under 
+:guilabel:`Correctness Warnings`: 
 
 .. code-block:: none
    :copyable: false 
 
-   Field <fieldName> does not exist in collection <collectionName>.
+   Field <fieldName> does not seem to exist in collection.
 
 Non-existent Collection Name 
 ----------------------------
 
 If you reference a collection name that doesn't exist in the database, the 
-{+intellij-short+} raises the following warning: 
+{+intellij-short+} raises the following warning in the side panel under 
+:guilabel:`Environment Mismatch Warnings`: 
 
 .. code-block:: none 
    :copyable: false 
@@ -70,7 +72,8 @@ Non-existent Database Name
 --------------------------
 
 If you reference a database that doesn't exist in the data source, the 
-{+intellij-short+} raises the following warning: 
+{+intellij-short+} raises the following warning in the side panel under 
+:guilabel:`Environment Mismatch Warnings`:
 
 .. code-block:: none
    :copyable: false
@@ -119,6 +122,33 @@ To resolve the warning, reference a collection that exists in the
             .find(Filters.eq("year", 1924))
             .into(new ArrayList<>());
     }
+
+Disable Validation Warnings 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To disable reference validation warnings in the side panel:
+
+.. procedure:: 
+   :style: normal
+   
+   .. step:: Click the :icon-lg:`VerticalEllipsis` icon next to the warning.
+      
+   .. step:: Click :guilabel:`Disable Inspection`.
+
+      When you click :guilabel:`Disable Inspection`, the plugin disables all 
+      reference validation warnings for the project.
+
+If you previously disabled reference validation warnings and want to re-enable 
+the insight: 
+
+.. procedure:: 
+   :style: normal
+
+   .. step:: Under :guilabel:`Performance Warnings`, click :guilabel:`Show disabled inspections`.
+      
+   .. step:: Click the :icon-lg:`VerticalEllipsis` icon next to the hidden warning.
+
+   .. step:: Click :guilabel:`Enable Inspection`.
 
 Learn More
 ----------
