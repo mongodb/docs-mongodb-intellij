@@ -63,6 +63,7 @@ type under :guilabel:`Correctness Warnings`:
 
 .. image:: /images/type-validation.png
    :alt: Type Validation Warning
+   :width: 50%
 
 To resolve the invalid type, change the value to a ``String``. For
 example: ``"start"``.

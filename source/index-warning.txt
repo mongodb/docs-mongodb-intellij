@@ -62,6 +62,7 @@ The side panel shows the following warning under
 
 .. image:: /images/index-warning.png
    :alt: Index warning in the IntelliJ Plugin.
+   :width: 50%
 
 Create an Index
 ~~~~~~~~~~~~~~~
