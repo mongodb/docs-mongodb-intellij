@@ -58,14 +58,42 @@ an equality comparison with an ``Integer`` value ``1324324``:
    }
 
 Because ``value`` is an ``Integer`` but ``trip_status`` is a ``String``
-in the MongoDB documents, the plugin shows a warning about the invalid
-type:
+in the MongoDB documents, the side panel shows a warning about the invalid
+type under :guilabel:`Correctness Warnings`:
 
-``"Integer" (type of provided value) can not be assigned to "String"
-(type of "trip_status")``
+.. image:: /images/type-validation.png
+   :alt: Type Validation Warning
+   :width: 400px
 
 To resolve the invalid type, change the value to a ``String``. For
 example: ``"start"``.
+
+Disable Type Validation Warnings 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To disable type validation warnings in the side panel:
+
+.. procedure:: 
+   :style: normal
+   
+   .. step:: Click the :icon-lg:`VerticalEllipsis` icon next to the warning.
+      
+   .. step:: Click :guilabel:`Disable Inspection`.
+
+      When you click :guilabel:`Disable Inspection`, the plugin disables all 
+      type validation warnings for the project.
+
+If you previously disabled type validation warnings and want to re-enable the 
+insight: 
+
+.. procedure:: 
+   :style: normal
+
+   .. step:: Under :guilabel:`Performance Warnings`, click :guilabel:`Show disabled inspections`.
+      
+   .. step:: Click the :icon-lg:`VerticalEllipsis` icon next to the hidden warning.
+
+   .. step:: Click :guilabel:`Enable Inspection`.
 
 Learn More
 ----------
