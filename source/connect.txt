@@ -72,10 +72,6 @@ Steps
       After you connect to your deployment, you can see all the generated 
       insights for your workspace. 
 
-      .. image:: /images/connect/intellij-insights.png
-         :alt: View insights for your MongoDB deployment.
-         :width: 600px
-
       The {+intellij-short+} includes four options to view your 
       :guilabel:`Insights`:
       
