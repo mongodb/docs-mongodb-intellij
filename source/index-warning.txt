@@ -41,7 +41,7 @@ Before you add an index, consider if:
 
 You can also disable index warnings.
 
-For more information about indexes, see :ref:`manual-create-an-index`.
+For more information about indexes, see :ref:`indexes`.
 
 Examples
 --------

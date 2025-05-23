@@ -46,8 +46,8 @@ Steps
 
    .. step:: Open the MongoDB side panel.
 
-      To open the MongoDB side panel, click the leaf icon on the far-right menu 
-      bar of IntelliJ.
+      To open the MongoDB side panel, click the leaf icon on the IntelliJ 
+      far-right menu bar.
       
       .. image:: /images/connect/intellij-mongodb-side.png 
          :alt: Click the Database Explorer icon.
@@ -70,7 +70,7 @@ Steps
    .. step:: View insights for your MongoDB deployment.
 
       After you connect to your deployment, you can see all the generated 
-      insights for your workspace. 
+      insights for your workspace, which include index and validation errors. 
 
       The {+intellij-short+} includes four options to view your 
       :guilabel:`Insights`:
