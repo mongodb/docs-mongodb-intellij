@@ -133,36 +133,10 @@ To resolve the warning, reference a collection that exists in the
             .into(new ArrayList<>());
     }
 
-Disable Validation Warnings 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To disable reference validation warnings in the side panel:
-
-.. procedure:: 
-   :style: normal
-   
-   .. step:: Click the :icon-lg:`VerticalEllipsis` icon next to the warning.
-      
-   .. step:: Click Disable Inspection.
-
-      When you click :guilabel:`Disable Inspection`, the plugin disables all 
-      reference validation warnings for the project.
-
-If you previously disabled reference validation warnings and want to re-enable 
-the insight: 
-
-.. procedure:: 
-   :style: normal
-
-   .. step:: Under Performance Warnings`, click Show disabled inspections.
-      
-   .. step:: Click the :icon-lg:`VerticalEllipsis` icon next to the hidden warning.
-
-   .. step:: Click Enable Inspection.
-
 Learn More
 ----------
 
 - :ref:`intellij-connect`
 - :ref:`intellij-autocomplete`
+- :ref:`intellij-disable-warnings`
 - :ref:`intellij-type-validation`

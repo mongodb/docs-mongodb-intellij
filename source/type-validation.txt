@@ -68,36 +68,10 @@ type under :guilabel:`Correctness Warnings`:
 To resolve the invalid type, change the value to a ``String``. For
 example: ``"start"``.
 
-Disable Type Validation Warnings 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To disable type validation warnings in the side panel:
-
-.. procedure:: 
-   :style: normal
-   
-   .. step:: Click the :icon-lg:`VerticalEllipsis` icon next to the warning.
-      
-   .. step:: Click Disable Inspection.
-
-      When you click :guilabel:`Disable Inspection`, the plugin disables all 
-      type validation warnings for the project.
-
-If you previously disabled type validation warnings and want to re-enable the 
-insight: 
-
-.. procedure:: 
-   :style: normal
-
-   .. step:: Under Performance Warnings, click Show disabled inspections.
-      
-   .. step:: Click the :icon-lg:`VerticalEllipsis` icon next to the hidden warning.
-
-   .. step:: Click Enable Inspection.
-
 Learn More
 ----------
 
 - :ref:`bson-types`
 - :ref:`intellij-db-reference-validation`
+- :ref:`intellij-disable-warnings`
 - :ref:`intellij-index-warning`

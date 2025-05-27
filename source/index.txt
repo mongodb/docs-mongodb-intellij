@@ -69,6 +69,7 @@ To learn more, see :ref:`intellij-submit-feedback`.
    Database Reference Validation </db-reference-validation>
    Type Validation </type-validation>
    Index Performance Warnings </index-warning>
+   Disable Warnings </disable-warnings>
    Run Java Queries </run-java-queries>
    Release Notes <https://github.com/mongodb-js/intellij/blob/main/CHANGELOG.md>
    Submit Feedback </submit-feedback>
