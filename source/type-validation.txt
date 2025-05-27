@@ -78,7 +78,7 @@ To disable type validation warnings in the side panel:
    
    .. step:: Click the :icon-lg:`VerticalEllipsis` icon next to the warning.
       
-   .. step:: Click :guilabel:`Disable Inspection`.
+   .. step:: Click Disable Inspection.
 
       When you click :guilabel:`Disable Inspection`, the plugin disables all 
       type validation warnings for the project.
@@ -89,11 +89,11 @@ insight:
 .. procedure:: 
    :style: normal
 
-   .. step:: Under :guilabel:`Performance Warnings`, click :guilabel:`Show disabled inspections`.
+   .. step:: Under Performance Warnings, click Show disabled inspections.
       
    .. step:: Click the :icon-lg:`VerticalEllipsis` icon next to the hidden warning.
 
-   .. step:: Click :guilabel:`Enable Inspection`.
+   .. step:: Click Enable Inspection.
 
 Learn More
 ----------
