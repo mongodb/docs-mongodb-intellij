@@ -67,33 +67,38 @@ The side panel shows the following warning under
 Create an Index
 ~~~~~~~~~~~~~~~
 
-To create an index for the query, click the :guilabel:`Create an
-Index` button displayed in the side panel warning.
+To create an index for the query: 
 
-The plugin then displays the :guilabel:`Database Explorer Playgrounds`
-screen with template code for creating an index:
+.. procedure:: 
+   :style: normal 
+   
+   .. step:: Click the Create an Index button displayed in the side panel warning.
+      
+      The plugin displays the :guilabel:`Database Explorer Playgrounds` screen 
+      with template code for creating an index:
+      
+      .. code-block:: java
+         :copyable: false
+         :emphasize-lines: 1
+         
+         // region Queries covered by this index 
+         // alt.mongodb.javadriver.JavaDriverRepository#getRatings at line 32
+         // endregion 
+         // Learn about creating an index: https://www.mongodb.com/docs/v7.0/core/data-model-operations/#indexes
+         db.getSiblingDB("sample_mflix").getCollection("movies")
+         .createIndex({ "awards": 1 })
 
-.. code-block:: java
-   :copyable: false
-   :emphasize-lines: 1
-
-   // region Queries covered by this index 
-   // alt.mongodb.javadriver.JavaDriverRepository#getRatings at line 32
-   // endregion 
-   // Learn about creating an index: https://www.mongodb.com/docs/v7.0/core/data-model-operations/#indexes
-   db.getSiblingDB("sample_mflix").getCollection("movies")
-      .createIndex({ "awards": 1 })
-
-To create an index for the ``awards`` field, set ``<your_field_1>``
-to ``awards`` in the example code and then run the
-:method:`~db.collection.createIndex()` method in the :guilabel:`Database
-Explorer Playgrounds` screen. For example:
-
-.. code-block:: java
-   :emphasize-lines: 2
-
-   db.getSiblingDB("sample_database").getCollection("movies").
-   createIndex({"awards": 1})
+   .. step:: Create an index on the awards field.
+      
+      Set ``<your_field_1>`` to ``awards`` in the example code and then run the 
+      :method:`~db.collection.createIndex()` method in the 
+      :guilabel:`Database Explorer Playgrounds` screen. For example:
+      
+      .. code-block:: java
+         :emphasize-lines: 2
+         
+         db.getSiblingDB("sample_database").getCollection("movies").
+         createIndex({"awards": 1})
 
 Learn More
 ----------

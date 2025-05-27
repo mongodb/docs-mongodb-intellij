@@ -70,7 +70,8 @@ Steps
    .. step:: View insights for your MongoDB deployment.
 
       After you connect to your deployment, you can see all the generated 
-      insights for your workspace, which include index and validation errors. 
+      insights for your workspace, which include index performance warnings and 
+      validation errors. 
 
       The {+intellij-short+} includes four options to view your 
       :guilabel:`Insights`:
