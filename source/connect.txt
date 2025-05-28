@@ -80,11 +80,11 @@ Steps
         workspace.
 
       - :guilabel:`Recommended Insights`: Includes insights for the most common 
-        parent package. This ensures that insights are relevant to all files 
-        and their shared context within the broader structure of your 
-        application.
+        parent package of files opened in the IDE. This ensures that insights 
+        are relevant to all files and their shared context within the broader 
+        structure of your application.
 
-      - :guilabel:`Current File`: Includes insights to just the currently open 
+      - :guilabel:`Current File`: Includes insights only from the currently open 
         file.
 
       - :guilabel:`Current Query`: Includes insights for the query where the 
