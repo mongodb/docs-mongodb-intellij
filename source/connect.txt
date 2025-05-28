@@ -73,6 +73,9 @@ Steps
       insights for your workspace, which include index performance warnings and 
       validation errors. 
 
+      .. image:: /images/connect/intellij-insights.png
+         :alt: View insights for your deployment in the side panel.
+
       The {+intellij-short+} includes four options to view your 
       :guilabel:`Insights`:
       
